@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<locallang>
+	<labels lang="en">
+		<label index="tab.label">Admin</label>
+		<label index="page.title">Administration</label>
+		<label index="metamenu.label">Administration</label>
+
+	</labels>
+	<labels lang="de">
+
+	</labels>
+</locallang>
