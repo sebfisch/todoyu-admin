@@ -101,6 +101,20 @@ class TodoyuAdminManager {
 
 
 
+	/**
+	 * Handler for admin extension request
+	 * Stop request if user is not admin
+	 *
+	 */
+	public static function onAdminExtRequest() {
+		if( ! TodoyuAuth::isAdmin() ) {
+			die("YOU HAVE NO ADMIN RIGHTS!");
+			exit();
+		}
+	}
+
+
+
 //
 //	/**
 //	 * Get active component
