@@ -69,7 +69,7 @@ class TodoyuAdminManager {
 	 */
 	public static function getModules() {
 		if( is_array( $GLOBALS['CONFIG']['EXT']['admin']['modules'] ) ) {
-			return TodoyuDiv::sortArrayByLabel( $GLOBALS['CONFIG']['EXT']['admin']['modules'] );
+			return TodoyuArray::sortByLabel( $GLOBALS['CONFIG']['EXT']['admin']['modules'] );
 		} else {
 			return array();
 		}
