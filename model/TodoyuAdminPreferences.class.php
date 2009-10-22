@@ -33,7 +33,7 @@ class TodoyuAdminPreferences {
 	private static function save($preference, $value, $idItem = 0, $unique = false) {
 		$idItem	= intval($idItem);
 
-		TodoyuPreferenceManager::savePreference(EXTID_ADMIN, $preference, $value, $idItem, $unique, EXTID_ADMIN);
+		return TodoyuPreferenceManager::savePreference(EXTID_ADMIN, $preference, $value, $idItem, $unique, EXTID_ADMIN);
 	}
 
 
@@ -48,7 +48,7 @@ class TodoyuAdminPreferences {
 	private static function getPref($preference, $idItem = 0, $unserialize = false) {
 		$idItem	= intval($idItem);
 
-		TodoyuPreferenceManager::getPreference(EXTID_ADMIN, $preference, $idItem, EXTID_ADMIN, $unserialize);
+		return TodoyuPreferenceManager::getPreference(EXTID_ADMIN, $preference, $idItem, EXTID_ADMIN, $unserialize);
 	}
 
 
@@ -62,7 +62,7 @@ class TodoyuAdminPreferences {
 	private static function getPrefs($preference, $idItem = 0) {
 		$idItem	= intval($idItem);
 
-		TodoyuPreferenceManager::getPreferences(EXTID_ADMIN, $preference, $idItem, EXTID_ADMIN);
+		return TodoyuPreferenceManager::getPreferences(EXTID_ADMIN, $preference, $idItem, EXTID_ADMIN);
 	}
 
 
