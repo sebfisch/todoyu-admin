@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rights labels="ext/admin/locale/rights.xml">
-	<section key="panelwidgets">
-		<allow right="PanelWidgetAdminModules" comment="can see quicktaskwizard" />
+	
+	<section key="general">
+		<allow right="use" />
+		<allow right="extensions.use" />
+		<allow right="usermanager.use" />
 	</section>
+	
+	<section key="panelwidgets">
+		<allow right="panelwidget.adminmodules" />
+	</section>
+	
 </rights>

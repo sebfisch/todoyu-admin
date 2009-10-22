@@ -84,7 +84,7 @@ class TodoyuAdminManager {
 	 * @return	Array		[class,method]
 	 */
 	public static function getModuleRenderFunction($module) {
-		return explode('::', $GLOBALS['CONFIG']['EXT']['admin']['modules'][$module]['funcRef']);
+		return $GLOBALS['CONFIG']['EXT']['admin']['modules'][$module]['funcRef'];
 	}
 
 
@@ -107,33 +107,11 @@ class TodoyuAdminManager {
 	 *
 	 */
 	public static function onAdminExtRequest() {
-		if( ! TodoyuAuth::isAdmin() ) {
+		if( ! allowed('admin', 'use') ) {
 			die("YOU HAVE NO ADMIN RIGHTS!");
 			exit();
 		}
 	}
-
-
-
-//
-//	/**
-//	 * Get active component
-//	 *
-//	 * @param	String	$module
-//	 */
-//	public static function getActiveComponent($module) {
-//		$components			= array_keys( $GLOBALS['CONFIG']['EXT'][ $module ]['admin']['components'] );
-//		$activeComponent	= TodoyuRequest::getComponent();
-//
-//			// no component selected?
-//		if ( ! in_array($activeComponent, $components) ) {
-//				// activate first component entry (default)
-//			$activeComponent = $components[0];
-//		}
-//
-//			// set selected component active
-//		$GLOBALS['CONFIG']['EXT']['calendar']['admin']['components'][$activeComponent][act] = 1;
-//	}
 
 }
 

@@ -32,8 +32,12 @@ if( ! defined('TODOYU') ) die('NO ACCESS');
 
 $CONFIG['EXT']['admin']['defaultModule'] = 'extensions';
 
-
+	// Register handler to restrict admin module access
 TodoyuActionDispatcher::registerRequestHandler('admin', 'TodoyuAdminManager::onAdminExtRequest');
 
+	// Add meta menu link to admin if allowed
+if( allowed('admin', 'use') ) {
+	TodoyuMetaMenuManager::addEntry('admin', 'LLL:admin.metamenu.label', 100, '?ext=admin');
+}
 
 ?>

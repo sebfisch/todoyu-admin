@@ -46,9 +46,6 @@ require_once( PATH_EXT_ADMIN . '/config/admin.php' );
 TodoyuLocale::register('admin', PATH_EXT_ADMIN . '/locale/ext.xml');
 TodoyuLocale::register('panelwidget-adminmodules', PATH_EXT_ADMIN . '/locale/panelwidget-adminmodules.xml');
 
-if( TodoyuAuth::isAdmin() ) {
-		// Add meta menu entry
-	TodoyuMetaMenuManager::addEntry('admin', 'LLL:admin.metamenu.label', 100, '?ext=admin');
-}
+
 
 ?>

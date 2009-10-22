@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <locallang>
 	<labels lang="en">
+		<label index="section.general">General settings</label>
+		<label index="right.use">Use admin module</label>
+		<label index="right.extensions.use">Extension Manager</label>
+		<label index="right.usermanager.use">User Manager</label>
 		<label index="section.panelwidgets">Panel widgets</label>
-		<label index="right.PanelWidgetAdminModules">See admin modules widget</label>
+		<label index="right.panelwidget.adminmodules">See admin modules widget</label>
 	</labels>
 	<labels lang="de">
 		<label index="section.panelwidgets">Panel widgets</label>

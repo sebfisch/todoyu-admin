@@ -6,6 +6,7 @@ class TodoyuAdminExtActionController extends TodoyuActionController {
 	public function defaultAction(array $params) {
 		TodoyuFrontend::setActiveTab('admin');
 
+
 		TodoyuPage::init('ext/admin/view/ext.tmpl');
 		TodoyuPage::setTitle('LLL:admin.page.title');
 
@@ -17,18 +18,16 @@ class TodoyuAdminExtActionController extends TodoyuActionController {
 		$module	= $params['mod']; // TodoyuRequest::getParam('mod');
 
 		if( ! TodoyuAdminManager::isModule($module) ) {
-			$module = 'extensions';
+			$module = TodoyuAdminManager::getActiveModule();
 		}
 
 		$moduleContent = TodoyuAdminRenderer::renderModule($module);
 
 		TodoyuPage::set('content', $moduleContent);
 
-
 			// Panel widgets
 		$panelWidgets	= TodoyuAdminRenderer::renderPanelWidgets();
 		TodoyuPage::set('panelWidgets', $panelWidgets);
-
 
 			// Render output
 		return TodoyuPage::render();
