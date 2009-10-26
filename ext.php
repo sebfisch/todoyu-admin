@@ -47,5 +47,4 @@ TodoyuLocale::register('admin', PATH_EXT_ADMIN . '/locale/ext.xml');
 TodoyuLocale::register('panelwidget-adminmodules', PATH_EXT_ADMIN . '/locale/panelwidget-adminmodules.xml');
 
 
-
 ?>
