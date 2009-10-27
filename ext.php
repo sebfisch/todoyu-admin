@@ -26,25 +26,22 @@
  * @subpackage	Admin
  */
 
-
 if( ! defined('TODOYU') ) die('NO ACCESS');
 
 
 
-	// declare ext ID, path
+	// Declare ext ID, path
 define('EXTID_ADMIN', 100);
 define('PATH_EXT_ADMIN', PATH_EXT . '/admin');
 
+	// Register module locales
+TodoyuLocale::register('admin', PATH_EXT_ADMIN . '/locale/ext.xml');
+TodoyuLocale::register('panelwidget-adminmodules', PATH_EXT_ADMIN . '/locale/panelwidget-adminmodules.xml');
 
-	// request configurations
+	// Request configurations
 require_once( PATH_EXT_ADMIN . '/config/extension.php' );
 require_once( PATH_EXT_ADMIN . '/config/panelwidgets.php' );
 require_once( PATH_EXT_ADMIN . '/config/admin.php' );
 //require_once( PATH_EXT_ADMIN . '/config/assets.php' );
-
-	// register localization files
-TodoyuLocale::register('admin', PATH_EXT_ADMIN . '/locale/ext.xml');
-TodoyuLocale::register('panelwidget-adminmodules', PATH_EXT_ADMIN . '/locale/panelwidget-adminmodules.xml');
-
 
 ?>
