@@ -14,12 +14,12 @@ class TodoyuAdminExtActionController extends TodoyuActionController {
 		TodoyuAdminRenderer::addAllModAssets();
 		TodoyuExtensions::loadAllAdmin();
 
-		$module	= $params['mod'];
 
+			// Get current admin module
+		$module	= $params['mod'];
 		if( ! TodoyuAdminManager::isModule($module) ) {
 			$module = TodoyuAdminManager::getActiveModule();
 		}
-
 			// Save current module
 		TodoyuAdminPreferences::saveActiveModule($module);
 
