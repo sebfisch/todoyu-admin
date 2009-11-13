@@ -1,15 +1,15 @@
 #panelwidget-adminmodules li {
 	height:16px;
-	padding: 3px 0 3px 3px;
+	padding:3px 0 3px 3px;
 	cursor:pointer;
 	overflow:hidden;
-	border-bottom: 1px dotted #848484;
+	border-bottom:1px dotted #848484;
 }
 
 #panelwidget-adminmodules li.active {
-	background-color: #adb989;
+	background-color:#adb989;
 }
 
 #panelwidget-adminmodules h1 .title {
-	background: transparent url('../img/icons.png') no-repeat 6px 5px;
+	background:transparent url('../img/icons.png') no-repeat 6px 5px;
 }
