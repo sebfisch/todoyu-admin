@@ -4,7 +4,8 @@
 class TodoyuAdminExtActionController extends TodoyuActionController {
 
 	public function defaultAction(array $params) {
-		TodoyuFrontend::setActiveTab('admin');
+		TodoyuFrontend::setActiveTab('todoyu');
+		TodoyuFrontend::setActiveSubmenuTab('todoyu', 'admin');
 
 
 		TodoyuPage::init('ext/admin/view/ext.tmpl');
