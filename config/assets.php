@@ -36,7 +36,11 @@ $CONFIG['EXT']['admin']['assets'] = array(
 
 		),
 		'css' => array(
-
+			array(
+				'file'		=> 'ext/admin/assets/css/ext.css',
+				'media'		=> 'all',
+				'position'	=> 100
+			)
 		)
 	),
 
@@ -46,13 +50,6 @@ $CONFIG['EXT']['admin']['assets'] = array(
 		'js' => array(
 			array(
 				'file'		=> 'ext/admin/assets/js/ext.js',
-				'position'	=> 100
-			)
-		),
-		'css' => array(
-			array(
-				'file'		=> 'ext/admin/assets/css/ext.css',
-				'media'		=> 'all',
 				'position'	=> 100
 			)
 		)
