@@ -40,6 +40,11 @@ $CONFIG['EXT']['admin']['assets'] = array(
 				'file'		=> 'ext/admin/assets/css/ext.css',
 				'media'		=> 'all',
 				'position'	=> 100
+			),
+			array(
+				'file'		=> 'ext/admin/assets/css/metamenu.css',
+				'media'		=> 'all',
+				'position'	=> 100
 			)
 		)
 	),
