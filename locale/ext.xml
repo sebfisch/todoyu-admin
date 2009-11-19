@@ -4,6 +4,7 @@
 		<label index="ext.title">Administration</label>
 		<label index="page.title">Administration</label>
 		<label index="tab.label">Admin</label>		
+<!-- 	<label index="metamenu.label">Admin</label> -->		
 	</labels>
 	<labels lang="de"></labels>
 </locallang>
