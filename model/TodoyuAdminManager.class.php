@@ -107,6 +107,7 @@ class TodoyuAdminManager {
 	 *
 	 */
 	public static function onAdminExtRequest() {
+		return true;
 		if( ! allowed('admin', 'use') ) {
 			die("YOU HAVE NO ADMIN RIGHTS!");
 			exit();

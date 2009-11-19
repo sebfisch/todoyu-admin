@@ -7,7 +7,7 @@
 *
 *  This script is part of the todoyu project.
 *  The todoyu project is free software; you can redistribute it and/or modify
-*  it under the terms of the GNU General Public License, version 2, 
+*  it under the terms of the GNU General Public License, version 2,
 *  (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html) as published by
 *  the Free Software Foundation;
 *
@@ -28,25 +28,16 @@ $CONFIG['EXT']['admin']['info'] = array(
 	'title'				=> 'Administration module',
 	'description' 		=> 'Advanced modules configuration and administration',
 	'author' 			=> array(
-		'name'		=> '',
-		'email'		=> '',
+		'name'		=> 'Todoyu Core Team',
+		'email'		=> 'team@todoyu.com',
 		'company'	=> 'Snowflake Productions, Zürich'
 	),
-	'dependencies' 		=> '',
-	'conflicts'			=> '',
 	'state' 			=> 'beta',
 	'version' => '0.1.0',
 	'constraints' => array(
-		'depends' => array(
-			'user'			=> '0.1.0',
-			'project' 		=> '0.1.0',
-		),
-		'conflicts' => array(
-
-		),
-		'suggests' => array(
-
-		),
+		'depends' 	=> array(),
+		'conflicts' => array(),
+		'system'	=> true
 	)
 );
 
