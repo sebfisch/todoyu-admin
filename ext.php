@@ -44,8 +44,6 @@ require_once( PATH_EXT_ADMIN . '/config/panelwidgets.php' );
 require_once( PATH_EXT_ADMIN . '/config/admin.php' );
 //require_once( PATH_EXT_ADMIN . '/config/assets.php' );
 
-if( TodoyuAuth::isLoggedIn() ) {
-	TodoyuFrontend::addSubmenuEntry('todoyu', 'admin', 'LLL:admin.tab.label', '?ext=admin', 1);
-}
+
 
 ?>
