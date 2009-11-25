@@ -54,11 +54,11 @@ $CONFIG['EXT']['admin']['assets'] = array(
 	'public' => array(
 		'js' => array(
 			array(
-				'file'		=> 'ext/admin/assets/js/ext.js',
+				'file'		=> 'ext/admin/assets/js/Ext.js',
 				'position'	=> 100
 			),
 			array(
-				'file'		=> 'ext/user/assets/js/ext.js',
+				'file'		=> 'ext/user/assets/js/Ext.js',
 				'position'	=> 105
 			),
 			array(
