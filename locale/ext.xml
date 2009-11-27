@@ -3,9 +3,11 @@
 	<labels lang="en">
 		<label index="ext.title">Administration</label>
 		<label index="page.title">Administration</label>
-		<label index="tab.label">Admin</label>		
-<!-- 	<label index="metamenu.label">Admin</label> -->
-<!--  ......................................... added after 20091122 -->		
+		<label index="tab.label">Admin</label>
 	</labels>
-	<labels lang="de"></labels>
+	<labels lang="de">
+		<label index="ext.title">Administration</label>
+		<label index="page.title">Administration</label>
+		<label index="tab.label">Admin</label>
+	</labels>
 </locallang>
