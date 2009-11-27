@@ -27,9 +27,6 @@
  */
 
 
-if( ! defined('TODOYU') ) die('NO ACCESS');
-
-
 $CONFIG['EXT']['admin']['defaultModule'] = 'extensions';
 
 	// Register handler to restrict admin module access

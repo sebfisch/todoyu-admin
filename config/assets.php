@@ -26,9 +26,6 @@
  * @subpackage	Admin
  */
 
-if( ! defined('TODOYU') ) die('NO ACCESS');
-
-
 $CONFIG['EXT']['admin']['assets'] = array(
 		// default assets: loaded all over the installation always
 	'default' => array(

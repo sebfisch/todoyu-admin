@@ -26,9 +26,6 @@
  * @subpackage	Admin
  */
 
-if( ! defined('TODOYU') ) die('NO ACCESS');
-
-
 
 	// Declare ext ID, path
 define('EXTID_ADMIN', 100);
