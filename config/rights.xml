@@ -3,10 +3,8 @@
 	
 	<section key="general">
 		<allow right="use" />
-		<allow right="extensions.use" />
-		<allow right="usermanager.use" />
 	</section>
-	
+		
 	<section key="panelwidgets">
 		<allow right="panelwidget.adminmodules" />
 	</section>
