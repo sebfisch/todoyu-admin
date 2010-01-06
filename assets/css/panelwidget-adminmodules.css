@@ -13,3 +13,18 @@
 #panelwidget-adminmodules h1 .title {
 	background:transparent url('../img/icons.png') no-repeat 6px 5px;
 }
+
+li.listItem.extensions span.icon {
+	padding: 0 0 0 4px;
+	background:transparent url('../img/icons.png') no-repeat 0px -30px;
+}
+
+li.listItem.records span.icon {
+	padding: 0 0 0 4px;
+	background:transparent url('../img/icons.png') no-repeat 0px -60px;
+}
+
+li.listItem.user span.icon {
+	padding: 0 0 0 4px;
+	background:transparent url('../img/icons.png') no-repeat 0px -90px;
+}
