@@ -1,30 +1,15 @@
-#panelwidget-adminmodules li {
-	height:16px;
-	padding:3px 0 3px 3px;
-	cursor:pointer;
-	overflow:hidden;
-	border-bottom:1px dotted #848484;
-}
-
-#panelwidget-adminmodules li.active {
-	background-color:#adb989;
-}
-
 #panelwidget-adminmodules h1 .title {
-	background:transparent url('../img/icons.png') no-repeat 6px 5px;
+	background:url(../img/icons.png) no-repeat 6px 5px;
 }
 
-li.listItem.extensions span.icon {
-	padding: 0 0 0 4px;
-	background:transparent url('../img/icons.png') no-repeat 0px -30px;
+#panelwidget-adminmodules li.extensions a {
+	background:url(../img/icons.png) no-repeat 0 -30px;
 }
 
-li.listItem.records span.icon {
-	padding: 0 0 0 4px;
-	background:transparent url('../img/icons.png') no-repeat 0px -60px;
+#panelwidget-adminmodules li.records a {
+	background:url(../img/icons.png) no-repeat 0 -60px;
 }
 
-li.listItem.user span.icon {
-	padding: 0 0 0 4px;
-	background:transparent url('../img/icons.png') no-repeat 0px -90px;
+#panelwidget-adminmodules li.user a {
+	background:url(../img/icons.png) no-repeat 0 -90px;
 }

@@ -1,7 +1,7 @@
-<ul class="ulList">
+<ul class="naviList">
 {foreach $modules module}
-	<li class="listItem {$module.key} {if $active == $module.key}active{/if}">
-		<a href="?ext=admin&amp;mod={$module.key}"><span class="icon"></span>{$module.label}</a>
+	<li class="{$module.key} {if $active == $module.key}active{/if}">
+		<a href="?ext=admin&amp;mod={$module.key}">{$module.label}</a>
 	</li>
 {/foreach}
 </ul>

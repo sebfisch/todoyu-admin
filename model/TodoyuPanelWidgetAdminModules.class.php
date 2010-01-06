@@ -73,12 +73,13 @@ class TodoyuPanelWidgetAdminModules extends TodoyuPanelWidget implements TodoyuP
 			$active = $active['key'];
 		}
 
-		$data		= array(
+		$tmpl	= 'ext/admin/view/panelwidget-adminmodules.tmpl';
+		$data	= array(
 			'active'	=> $active,
 			'modules'	=> $modules
 		);
 
-		$content	= render('ext/admin/view/panelwidget-adminmodules.tmpl', $data);
+		$content	= render($tmpl, $data);
 
 		$this->setContent($content);
 
