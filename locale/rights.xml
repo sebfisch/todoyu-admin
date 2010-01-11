@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <locallang>
 	<labels lang="en">
-		<label index="section.general">General Settings</label>
-		<label index="right.use">Use Admin Module</label>
-		<label index="right.extensions.use">Extensions</label>
-		<label index="right.usermanager.use">Users</label>
-		<label index="section.panelwidgets">Panel Widgets</label>
-		<label index="right.panelwidget.adminmodules">See Admin Modules widget</label>
+		<label index="general">General Settings</label>
+		<label index="general.use">Use Admin Module</label>
+		<label index="panelwidgets">Panel Widgets</label>
+		<label index="panelwidgets.adminmodules">See Admin Modules widget</label>
 	</labels>
 	<labels lang="de">
-		<label index="section.general">Allgemeine Einstellungen</label>
-		<label index="right.use">Admin-Modul benutzen</label>
-		<label index="right.extensions.use">Extensions</label>
-		<label index="right.usermanager.use">Benutzer</label>
-		<label index="section.panelwidgets">Steuerelement</label>
-		<label index="right.panelwidget.adminmodules">Siehe Admin-Module Steuerelement</label>
+		<label index="general">Allgemeine Einstellungen</label>
+		<label index="general.use">Admin-Modul benutzen</label>
+		<label index="panelwidgets">Steuerelement</label>
+		<label index="panelwidgets.adminmodules">Siehe Admin-Module Steuerelement</label>
 	</labels>
 </locallang>

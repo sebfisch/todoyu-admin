@@ -103,7 +103,7 @@ class TodoyuPanelWidgetAdminModules extends TodoyuPanelWidget implements TodoyuP
 
 
 	public static function isAllowed() {
-		return allowed('admin', 'panelwidget.adminmodules');
+		return allowed('admin', 'panelwidgets:adminmodules');
 	}
 
 }
