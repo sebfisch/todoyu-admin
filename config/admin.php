@@ -19,14 +19,4 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-/**
- * Administration
- *
- * @package		Todoyu
- * @subpackage	Admin
- */
-
-
-//TodoyuAdminManager::addModule('welcome', 'Overview', 'TodoyuAdminRenderer::renderWelcome', 0);
-
 ?>

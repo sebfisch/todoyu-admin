@@ -29,10 +29,6 @@
 
 class TodoyuAdminRenderer {
 
-	/**
-	 * Extension key
-	 */
-	const EXTKEY = 'admin';
 
 	/**
 	 * Render module
@@ -40,9 +36,15 @@ class TodoyuAdminRenderer {
 	 * @param	String		$module
 	 * @return	String
 	 */
-	public static function renderModule($module) {
-		$renderFunc = TodoyuAdminManager::getModuleRenderFunction($module);
-		$params		= TodoyuRequest::getAll();
+	public static function renderModuleContent($module, array $params = array()) {
+		$renderFunc = TodoyuAdminManager::getModuleRenderFunction($module, 'content');
+
+		return TodoyuDiv::callUserFunction($renderFunc, $params);
+	}
+
+
+	public static function renderModuleTabs($module, array $params = array()) {
+		$renderFunc = TodoyuAdminManager::getModuleRenderFunction($module, 'tabs');
 
 		return TodoyuDiv::callUserFunction($renderFunc, $params);
 	}

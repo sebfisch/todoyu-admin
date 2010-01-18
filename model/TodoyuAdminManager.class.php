@@ -37,15 +37,18 @@ class TodoyuAdminManager {
 	 * @param	String		$renderFunction		Function ref to the content render function
 	 * @param	Integer		$position			Position in menu
 	 */
-	public static function addModule($module, $label, $renderFunction, $position = 100, array $assetConf = array()) {
+	public static function addModule($module, $label, $renderFuncContent, $renderFuncTabs, $position = 100, array $assetConf = array()) {
 		$position	= intval($position);
 
 		$GLOBALS['CONFIG']['EXT']['admin']['modules'][$module] = array(
-			'key'		=> $module,
-			'label'		=> TodoyuDiv::getLabel($label),
-			'funcRef'	=> $renderFunction,
-			'position'	=> $position,
-			'assetConf'	=> $assetConf
+			'key'			=> $module,
+			'label'			=> TodoyuDiv::getLabel($label),
+			'render'		=> array(
+				'content'	=> $renderFuncContent,
+				'tabs'		=> $renderFuncTabs
+			),
+			'position'		=> $position,
+			'assetConf'		=> $assetConf
 		);
 	}
 
@@ -83,8 +86,8 @@ class TodoyuAdminManager {
 	 * @param	String		$module		Module key
 	 * @return	Array		[class,method]
 	 */
-	public static function getModuleRenderFunction($module) {
-		return $GLOBALS['CONFIG']['EXT']['admin']['modules'][$module]['funcRef'];
+	public static function getModuleRenderFunction($module, $type = 'content') {
+		return $GLOBALS['CONFIG']['EXT']['admin']['modules'][$module]['render'][$type];
 	}
 
 
