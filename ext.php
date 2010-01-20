@@ -32,8 +32,8 @@ define('EXTID_ADMIN', 100);
 define('PATH_EXT_ADMIN', PATH_EXT . '/admin');
 
 	// Register module locales
-TodoyuLocale::register('admin', PATH_EXT_ADMIN . '/locale/ext.xml');
-TodoyuLocale::register('panelwidget-adminmodules', PATH_EXT_ADMIN . '/locale/panelwidget-adminmodules.xml');
+TodoyuLanguage::register('admin', PATH_EXT_ADMIN . '/locale/ext.xml');
+TodoyuLanguage::register('panelwidget-adminmodules', PATH_EXT_ADMIN . '/locale/panelwidget-adminmodules.xml');
 
 	// Request configurations
 require_once( PATH_EXT_ADMIN . '/config/extension.php' );
