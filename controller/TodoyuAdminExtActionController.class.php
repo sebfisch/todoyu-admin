@@ -43,9 +43,9 @@ class TodoyuAdminExtActionController extends TodoyuActionController {
 			// Save current module
 		TodoyuAdminPreferences::saveActiveModule($module);
 
-		$panelWidgets	= TodoyuAdminRenderer::renderPanelWidgets();
 		$moduleTabs		= TodoyuAdminRenderer::renderModuleTabs($module, $params);
 		$moduleContent	= TodoyuAdminRenderer::renderModuleContent($module, $params);
+		$panelWidgets	= TodoyuAdminRenderer::renderPanelWidgets();
 
 		TodoyuPage::set('panelWidgets', $panelWidgets);
 		TodoyuPage::set('tabs', $moduleTabs);
