@@ -21,9 +21,9 @@
 Todoyu.Ext.admin = {
 
 	/**
-	 *	Load module
+	 * Load module
 	 *
-	 *	@param	String	module
+	 * @param	String	module
 	 */
 	loadModule: function(module) {
 		var url		= Todoyu.getUrl('admin', 'module');
@@ -35,4 +35,6 @@ Todoyu.Ext.admin = {
 
 		Todoyu.Ui.update('admin-content', url, options);
 	}
+	
+	
 };
