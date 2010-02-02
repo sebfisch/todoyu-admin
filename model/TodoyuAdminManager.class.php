@@ -42,7 +42,7 @@ class TodoyuAdminManager {
 
 		$GLOBALS['CONFIG']['EXT']['admin']['modules'][$module] = array(
 			'key'			=> $module,
-			'label'			=> TodoyuDiv::getLabel($label),
+			'label'			=> $label,
 			'render'		=> array(
 				'content'	=> $renderFuncContent,
 				'tabs'		=> $renderFuncTabs

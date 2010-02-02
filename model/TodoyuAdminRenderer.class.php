@@ -69,11 +69,13 @@ class TodoyuAdminRenderer {
 	 *
 	 */
 	public static function addAllModAssets() {
-		if( is_array($GLOBALS['CONFIG']['EXT']['admin']['modules']) ) {
-			foreach($GLOBALS['CONFIG']['EXT']['admin']['modules'] as $module) {
-				if( is_array($module['assetConf']) && sizeof($module['assetConf']) === 2 ) {
-					TodoyuPage::addExtAssets($module['assetConf'][0], $module['assetConf'][1]);
-				}
+		TodoyuExtensions::loadAllAdmin();
+
+		$modules	= TodoyuArray::assure($GLOBALS['CONFIG']['EXT']['admin']['modules']);
+
+		foreach($modules as $module) {
+			if( is_array($module['assetConf']) && sizeof($module['assetConf']) === 2 ) {
+				TodoyuPage::addExtAssets($module['assetConf'][0], $module['assetConf'][1]);
 			}
 		}
 	}
