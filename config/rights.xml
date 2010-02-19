@@ -5,7 +5,7 @@
 		<right name="use" />
 	</section>
 
-	<section name="panelwidgets" require="general.use">
+	<section name="panelwidgets" require="general:use">
 		<right name="adminmodules" />
 	</section>
 
