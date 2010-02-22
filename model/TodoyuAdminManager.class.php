@@ -101,22 +101,6 @@ class TodoyuAdminManager {
 	public static function isModule($module) {
 		return is_array($GLOBALS['CONFIG']['EXT']['admin']['modules'][$module]);
 	}
-
-
-
-	/**
-	 * Handler for admin extension request
-	 * Stop request if user is not admin
-	 *
-	 */
-	public static function onAdminExtRequest() {
-		return true;
-		if( ! allowed('admin', 'general:use') ) {
-			die("YOU HAVE NO ADMIN RIGHTS!");
-			exit();
-		}
-	}
-
 }
 
 ?>

@@ -53,22 +53,6 @@ $CONFIG['EXT']['admin']['assets'] = array(
 			array(
 				'file'		=> 'ext/admin/assets/js/Ext.js',
 				'position'	=> 100
-			),
-			array(
-				'file'		=> 'ext/user/assets/js/Ext.js',
-				'position'	=> 105
-			),
-			array(
-				'file'		=> 'ext/user/assets/js/Editor.js',
-				'position'	=> 110
-			),
-			array(
-				'file'		=> 'ext/user/assets/js/UserEditor.js',
-				'position'	=> 115
-			),
-			array(
-				'file'		=> 'ext/user/assets/js/UsergroupEditor.js',
-				'position'	=> 120
 			)
 		)
 	),

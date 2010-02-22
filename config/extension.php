@@ -29,7 +29,4 @@
 
 $CONFIG['EXT']['admin']['defaultModule'] = 'extensions';
 
-	// Register handler to restrict admin module access
-TodoyuActionDispatcher::registerRequestHandler('admin', 'TodoyuAdminManager::onAdminExtRequest');
-
 ?>
