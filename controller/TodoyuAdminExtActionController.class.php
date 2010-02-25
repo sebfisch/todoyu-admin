@@ -21,6 +21,12 @@
 
 class TodoyuAdminExtActionController extends TodoyuActionController {
 
+	/**
+	 * Admin extension default action controller method
+	 *
+	 * @param	Array	$params
+	 * @return	String
+	 */
 	public function defaultAction(array $params) {
 			// Set active tab and submenu
 		TodoyuFrontend::setActiveTab('todoyu');
@@ -60,7 +66,13 @@ class TodoyuAdminExtActionController extends TodoyuActionController {
 
 
 
-
+	/**
+	 * Handle unknown actions (call default action)
+	 *
+	 * @param	String	$actionName
+	 * @param	Array	$params
+	 * @return	String
+	 */
 	public function _unknownAction($actionName, array $params) {
 		return $this->defaultAction($params);
 	}

@@ -21,6 +21,12 @@
 
 class TodoyuAdminModuleActionController extends TodoyuActionController {
 
+	/**
+	 * Admin module default action controller method
+	 *
+	 * @param	Array	$params
+	 * @return	String
+	 */
 	public function defaultAction(array $params) {
 		return TodoyuAdminRenderer::renderModule($params['mod']);
 	}
