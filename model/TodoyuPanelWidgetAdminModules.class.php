@@ -33,10 +33,10 @@ class TodoyuPanelWidgetAdminModules extends TodoyuPanelWidget implements TodoyuP
 	/**
 	 * Admin modules panel widget constructor
 	 *
-	 * @param	array	$config
-	 * @param	array	$params
-	 * @param	Integer	$idArea
-	 * @param	Boolean $expanded
+	 * @param	Array		$config
+	 * @param	Array		$params
+	 * @param	Integer		$idArea
+	 * @param	Boolean 	$expanded
 	 */
 	public function __construct(array $config, array $params = array(), $idArea = 0) {
 		$idArea	= intval($idArea);
@@ -63,8 +63,6 @@ class TodoyuPanelWidgetAdminModules extends TodoyuPanelWidget implements TodoyuP
 	 * @return	String
 	 */
 	public function renderContent() {
-		$content = '';
-
 		$modules	= TodoyuAdminManager::getModules();
 		$active		= TodoyuAdminPreferences::getActiveModule();
 
@@ -101,7 +99,11 @@ class TodoyuPanelWidgetAdminModules extends TodoyuPanelWidget implements TodoyuP
 
 
 
-
+	/**
+	 * Check whether usage of admin modules selector widget is allowed
+	 *
+	 * @return	Boolean
+	 */
 	public static function isAllowed() {
 		return allowed('admin', 'panelwidgets:adminmodules');
 	}
