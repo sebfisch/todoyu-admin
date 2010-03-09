@@ -19,6 +19,12 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
+/**
+ * Admin preference action controller
+ *
+ * @package		Todoyu
+ * @subpackage	Admin
+ */
 class TodoyuAdminPreferenceActionController extends TodoyuActionController {
 
 	public function pwidgetAction(array $params) {

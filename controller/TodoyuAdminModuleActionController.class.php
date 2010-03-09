@@ -19,7 +19,24 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
+/**
+ * Admin module action controller
+ *
+ * @package		Todoyu
+ * @subpackage	Admin
+ */
 class TodoyuAdminModuleActionController extends TodoyuActionController {
+
+	/**
+	 * Restrict access to admins
+	 *
+	 * @param	Array		$params
+	 */
+	public static function init(array $params) {
+		TodoyuRightsManager::restrictAdmin();
+	}
+
+
 
 	/**
 	 * Admin module default action controller method

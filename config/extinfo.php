@@ -25,16 +25,16 @@
 
 
 $CONFIG['EXT']['admin']['info'] = array(
-	'title'				=> 'Administration module',
-	'description' 		=> 'Advanced modules configuration and administration',
-	'author' 			=> array(
+	'title'			=> 'Administration module',
+	'description' 	=> 'Advanced modules configuration and administration',
+	'author' 		=> array(
 		'name'		=> 'Todoyu Core Team',
 		'email'		=> 'team@todoyu.com',
 		'company'	=> 'Snowflake Productions, Zürich'
 	),
-	'state' 			=> 'beta',
-	'version' => '0.2.0',
-	'constraints' => array(
+	'state' 		=> 'beta',
+	'version' 		=> '0.2.0',
+	'constraints' 	=> array(
 		'depends' 	=> array(),
 		'conflicts' => array(),
 		'system'	=> true

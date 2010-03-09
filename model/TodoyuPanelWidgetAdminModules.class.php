@@ -105,7 +105,7 @@ class TodoyuPanelWidgetAdminModules extends TodoyuPanelWidget implements TodoyuP
 	 * @return	Boolean
 	 */
 	public static function isAllowed() {
-		return allowed('admin', 'panelwidgets:adminmodules');
+		return TodoyuAuth::isAdmin();
 	}
 
 }

@@ -19,7 +19,20 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
+/**
+ * Admin cache action controller
+ *
+ */
 class TodoyuAdminCacheActionController extends TodoyuActionController {
+
+	/**
+	 * Restrict access to admins
+	 *
+	 * @param	Array		$params
+	 */
+	public static function init(array $params) {
+		TodoyuRightsManager::restrictAdmin();
+	}
 
 	public function clearAction(array $params) {
 		TodoyuHeader::sendHeaderPlain();
