@@ -1,3 +1,4 @@
+<?php
 /***************************************************************
 *  Copyright notice
 *
@@ -18,26 +19,38 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-Todoyu.Ext.admin = {
-	
-	Headlet: {},
-	
-	PanelWidget: {},
+/**
+ * Ajax loader headlet
+ * Shows ajax loading icon if a request is active
+ *
+ * @package		Todoyu
+ * @subpackage	Core
+ */
+
+class TodoyuHeadletAdmin extends TodoyuHeadletTypeButton {
 
 	/**
-	 * Load module
+	 * Initialize headlets
 	 *
-	 * @param	String	module
 	 */
-	loadModule: function(module) {
-		var url		= Todoyu.getUrl('admin', 'module');
-		var options	= {
-			'parameters': {
-				'mod': module
-			}
-		};
+	protected function init() {
+			// Set javascript object which handles events
+		$this->setJsHeadlet('Todoyu.Ext.admin.Headlet.Admin');
 
-		Todoyu.Ui.update('admin-content', url, options);
+		TodoyuPage::addExtAssets('admin', 'headlet-admin');
 	}
-	
-};
+
+
+
+	/**
+	 * Render headlet
+	 *
+	 * @return	String
+	 */
+	public function render() {
+		return parent::render();
+	}
+
+}
+
+?>
