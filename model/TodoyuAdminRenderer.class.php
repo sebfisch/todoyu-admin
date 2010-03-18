@@ -33,7 +33,7 @@ class TodoyuAdminRenderer {
 	/**
 	 * Render module
 	 *
-	 * @param	String		$module
+	 * @param	String		$module		e.g. 'extensions' / 'records' / 'rights' / etc.
 	 * @return	String
 	 */
 	public static function renderModuleContent($module, array $params = array()) {
@@ -43,6 +43,14 @@ class TodoyuAdminRenderer {
 	}
 
 
+
+	/**
+	 * Render tabs of given module inside admin area
+	 *
+	 * @param	String	$module			e.g. 'extensions' / 'records' / 'rights' / etc.
+	 * @param	Array	$params
+	 * @return	String
+	 */
 	public static function renderModuleTabs($module, array $params = array()) {
 		$renderFunc = TodoyuAdminManager::getModuleRenderFunction($module, 'tabs');
 
