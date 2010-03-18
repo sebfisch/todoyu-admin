@@ -51,8 +51,6 @@ class TodoyuPanelWidgetAdminModules extends TodoyuPanelWidget implements TodoyuP
 		);
 
 		$this->addHasIconClass();
-
-		TodoyuPage::addExtAssets('admin', 'panelwidget-adminmodules');
 	}
 
 

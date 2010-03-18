@@ -27,63 +27,38 @@
  */
 
 $CONFIG['EXT']['admin']['assets'] = array(
-		// Default assets: loaded all over the installation always
-	'default' => array(
-		'js' => array(
-			array(
-				'file'		=> 'ext/admin/assets/js/Ext.js',
-				'position'	=> 100
-			)
+	'js' => array(
+		array(
+			'file'		=> 'ext/admin/assets/js/Ext.js',
+			'position'	=> 100
 		),
-		'css' => array(
-			array(
-				'file'		=> 'ext/admin/assets/css/ext.css',
-				'media'		=> 'all',
-				'position'	=> 100
-			),
-			array(
-				'file'		=> 'ext/admin/assets/css/global.css',
-				'media'		=> 'all',
-				'position'	=> 100
-			)
+		array(
+			'file'		=> 'ext/admin/assets/js/HeadletAdmin.js',
+			'position'	=> 110
 		)
 	),
-
-
-		// Public assets: basis assets for this extension
-	'public' => array(
-		'js' => array(
-
-		)
-	),
-
-		// Assets of panel widgets
-	'panelwidget-adminmodules' => array(
-		'css' => array(
-			array(
-				'file'		=> 'ext/admin/assets/css/panelwidget-adminmodules.css',
-				'media'		=> 'all',
-				'position'	=> 100
-			)
-		)
-	),
-
-	'headlet-admin' => array(
-		'js' => array(
-			array(
-				'file'		=> 'ext/admin/assets/js/HeadletAdmin.js',
-				'position'	=> 110
-			)
+	'css' => array(
+		array(
+			'file'		=> 'ext/admin/assets/css/ext.css',
+			'media'		=> 'all',
+			'position'	=> 100
 		),
-		'css' => array(
-			array(
-				'file'		=> 'ext/admin/assets/css/headlet-admin.css',
-				'media'		=> 'all',
-				'position'	=> 110
-			)
+		array(
+			'file'		=> 'ext/admin/assets/css/global.css',
+			'media'		=> 'all',
+			'position'	=> 100
+		),
+		array(
+			'file'		=> 'ext/admin/assets/css/panelwidget-adminmodules.css',
+			'media'		=> 'all',
+			'position'	=> 100
+		),
+		array(
+			'file'		=> 'ext/admin/assets/css/headlet-admin.css',
+			'media'		=> 'all',
+			'position'	=> 110
 		)
 	)
-
 );
 
 

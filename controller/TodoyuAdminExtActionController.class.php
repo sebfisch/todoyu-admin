@@ -52,9 +52,7 @@ class TodoyuAdminExtActionController extends TodoyuActionController {
 		TodoyuPage::init('ext/admin/view/ext.tmpl');
 		TodoyuPage::setTitle('LLL:admin.page.title');
 
-			// Load assets and config
-		TodoyuPage::addExtAssets('admin');
-		TodoyuAdminRenderer::addAllModAssets();
+			// Load config
 		TodoyuExtensions::loadAllAdmin();
 
 

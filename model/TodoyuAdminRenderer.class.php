@@ -62,24 +62,6 @@ class TodoyuAdminRenderer {
 		return TodoyuPanelWidgetRenderer::renderPanelWidgets('admin', $params);
 	}
 
-
-
-	/**
-	 * Add all configured assets of registered admin modules
-	 *
-	 */
-	public static function addAllModAssets() {
-		TodoyuExtensions::loadAllAdmin();
-
-		$modules	= TodoyuArray::assure($GLOBALS['CONFIG']['EXT']['admin']['modules']);
-
-		foreach($modules as $module) {
-			if( is_array($module['assetConf']) && sizeof($module['assetConf']) === 2 ) {
-				TodoyuPage::addExtAssets($module['assetConf'][0], $module['assetConf'][1]);
-			}
-		}
-	}
-
 }
 
 ?>
