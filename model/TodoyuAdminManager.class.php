@@ -40,7 +40,7 @@ class TodoyuAdminManager {
 	public static function addModule($module, $label, $renderFuncContent, $renderFuncTabs, $position = 100, array $assetConf = array()) {
 		$position	= intval($position);
 
-		$GLOBALS['CONFIG']['EXT']['admin']['modules'][$module] = array(
+		Todoyu::$CONFIG['EXT']['admin']['modules'][$module] = array(
 			'key'			=> $module,
 			'label'			=> $label,
 			'render'		=> array(
@@ -57,7 +57,7 @@ class TodoyuAdminManager {
 		$module	= TodoyuAdminPreferences::getActiveModule();
 
 		if( $module === false ) {
-			$module = $GLOBALS['CONFIG']['EXT']['admin']['defaultModule'];
+			$module = Todoyu::$CONFIG['EXT']['admin']['defaultModule'];
 		}
 
 		return $module;
@@ -71,8 +71,8 @@ class TodoyuAdminManager {
 	 * @return	Array
 	 */
 	public static function getModules() {
-		if( is_array( $GLOBALS['CONFIG']['EXT']['admin']['modules'] ) ) {
-			return TodoyuArray::sortByLabel( $GLOBALS['CONFIG']['EXT']['admin']['modules'] );
+		if( is_array( Todoyu::$CONFIG['EXT']['admin']['modules'] ) ) {
+			return TodoyuArray::sortByLabel( Todoyu::$CONFIG['EXT']['admin']['modules'] );
 		} else {
 			return array();
 		}
@@ -87,7 +87,7 @@ class TodoyuAdminManager {
 	 * @return	Array		[class,method]
 	 */
 	public static function getModuleRenderFunction($module, $type = 'content') {
-		return $GLOBALS['CONFIG']['EXT']['admin']['modules'][$module]['render'][$type];
+		return Todoyu::$CONFIG['EXT']['admin']['modules'][$module]['render'][$type];
 	}
 
 
@@ -99,7 +99,7 @@ class TodoyuAdminManager {
 	 * @return	Boolean
 	 */
 	public static function isModule($module) {
-		return is_array($GLOBALS['CONFIG']['EXT']['admin']['modules'][$module]);
+		return is_array(Todoyu::$CONFIG['EXT']['admin']['modules'][$module]);
 	}
 }
 

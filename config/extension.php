@@ -27,6 +27,6 @@
  */
 
 
-$CONFIG['EXT']['admin']['defaultModule'] = 'extensions';
+Todoyu::$CONFIG['EXT']['admin']['defaultModule'] = 'extensions';
 
 ?>

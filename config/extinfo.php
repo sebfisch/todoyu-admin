@@ -24,7 +24,7 @@
  */
 
 
-$CONFIG['EXT']['admin']['info'] = array(
+Todoyu::$CONFIG['EXT']['admin']['info'] = array(
 	'title'			=> 'Administration Module',
 	'description' 	=> 'Module for Configuration and Administration',
 	'author' 		=> array(

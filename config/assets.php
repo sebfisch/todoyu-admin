@@ -26,7 +26,7 @@
  * @subpackage	Admin
  */
 
-$CONFIG['EXT']['admin']['assets'] = array(
+Todoyu::$CONFIG['EXT']['admin']['assets'] = array(
 	'js' => array(
 		array(
 			'file'		=> 'ext/admin/assets/js/Ext.js',
