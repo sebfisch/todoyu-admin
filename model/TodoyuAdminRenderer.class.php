@@ -39,7 +39,7 @@ class TodoyuAdminRenderer {
 	public static function renderModuleContent($module, array $params = array()) {
 		$renderFunc = TodoyuAdminManager::getModuleRenderFunction($module, 'content');
 
-		return TodoyuDiv::callUserFunction($renderFunc, $params);
+		return TodoyuFunction::callUserFunction($renderFunc, $params);
 	}
 
 
@@ -54,7 +54,7 @@ class TodoyuAdminRenderer {
 	public static function renderModuleTabs($module, array $params = array()) {
 		$renderFunc = TodoyuAdminManager::getModuleRenderFunction($module, 'tabs');
 
-		return TodoyuDiv::callUserFunction($renderFunc, $params);
+		return TodoyuFunction::callUserFunction($renderFunc, $params);
 	}
 
 
