@@ -51,6 +51,12 @@ class TodoyuAdminManager {
 	}
 
 
+
+	/**
+	 * Get name of currently active admin module
+	 *
+	 * @return	String
+	 */
 	public static function getActiveModule() {
 		$module	= TodoyuAdminPreferences::getActiveModule();
 
