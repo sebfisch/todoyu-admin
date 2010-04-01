@@ -33,7 +33,7 @@ class TodoyuHeadletAdmin extends TodoyuHeadletTypeButton {
 	 *
 	 */
 	protected function init() {
-			// Set javascript object which handles events
+			// Set javaScript object which handles events
 		$this->setJsHeadlet('Todoyu.Ext.admin.Headlet.Admin');
 	}
 
