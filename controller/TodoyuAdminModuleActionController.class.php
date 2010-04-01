@@ -44,7 +44,7 @@ class TodoyuAdminModuleActionController extends TodoyuActionController {
 	 * @return	String
 	 */
 	public function defaultAction(array $params) {
-		return TodoyuAdminRenderer::renderModule($params['mod']);
+		return TodoyuAdminRenderer::renderModuleContent($params['mod']);
 	}
 
 }
