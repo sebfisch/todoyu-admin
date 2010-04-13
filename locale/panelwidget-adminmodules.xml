@@ -6,4 +6,7 @@
 	<labels lang="de">
 		<label index="title">Admin-Module</label>
 	</labels>
+	<labels lang="pt">
+		<label index="title">Módulos de Administração</label>
+	</labels>
 </locallang>

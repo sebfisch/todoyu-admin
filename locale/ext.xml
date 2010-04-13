@@ -10,4 +10,9 @@
 		<label index="page.title">Administration</label>
 		<label index="headlet.label">Administration</label>
 	</labels>
+	<labels lang="pt">
+		<label index="ext.title">Administração</label>
+		<label index="page.title">Administração</label>
+		<label index="headlet.label">Admin</label>
+	</labels>
 </locallang>
