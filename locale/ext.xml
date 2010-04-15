@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <locallang>
-	<labels lang="en">
+	<labels lang="en_GB">
 		<label index="ext.title">Administration</label>
 		<label index="page.title">Administration</label>
 		<label index="headlet.label">Admin</label>
 	</labels>
-	<labels lang="de">
+	<labels lang="de_DE">
 		<label index="ext.title">Administration</label>
 		<label index="page.title">Administration</label>
 		<label index="headlet.label">Administration</label>
 	</labels>
-	<labels lang="pt">
+	<labels lang="pt_BR">
 		<label index="ext.title">Administração</label>
 		<label index="page.title">Administração</label>
 		<label index="headlet.label">Admin</label>
