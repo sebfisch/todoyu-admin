@@ -25,7 +25,6 @@
  * @subpackage	Admin
  */
 
-
 	// Declare ext ID, path
 define('EXTID_ADMIN', 100);
 define('PATH_EXT_ADMIN', PATH_EXT . '/admin');
@@ -35,11 +34,7 @@ TodoyuLanguage::register('admin', PATH_EXT_ADMIN . '/locale/ext.xml');
 TodoyuLanguage::register('panelwidget-adminmodules', PATH_EXT_ADMIN . '/locale/panelwidget-adminmodules.xml');
 
 	// Request configurations
+	// @notice	Auto-loaded configs if available: admin, assets, create, contextmenu, extinfo, filters, form, page, panelwidgets, rights, search
 require_once( PATH_EXT_ADMIN . '/config/extension.php' );
-require_once( PATH_EXT_ADMIN . '/config/panelwidgets.php' );
-require_once( PATH_EXT_ADMIN . '/config/admin.php' );
-//require_once( PATH_EXT_ADMIN . '/config/assets.php' );
-
-
 
 ?>
