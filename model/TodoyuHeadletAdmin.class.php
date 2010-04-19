@@ -25,12 +25,10 @@
  * @package		Todoyu
  * @subpackage	Core
  */
-
 class TodoyuHeadletAdmin extends TodoyuHeadletTypeButton {
 
 	/**
 	 * Initialize headlets
-	 *
 	 */
 	protected function init() {
 			// Set javaScript object which handles events

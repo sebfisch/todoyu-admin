@@ -25,7 +25,6 @@
  * @package		Todoyu
  * @subpackage	Admin
  */
-
 class TodoyuPanelWidgetAdminModules extends TodoyuPanelWidget implements TodoyuPanelWidgetIf {
 
 

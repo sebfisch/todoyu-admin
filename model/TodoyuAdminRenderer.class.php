@@ -25,9 +25,7 @@
  * @package		Todoyu
  * @subpackage	Admin
  */
-
 class TodoyuAdminRenderer {
-
 
 	/**
 	 * Render module
