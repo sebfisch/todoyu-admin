@@ -20,7 +20,6 @@
 
 class TodoyuAdminPreferences {
 
-
 	/**
 	 * Save admin preference
 	 *

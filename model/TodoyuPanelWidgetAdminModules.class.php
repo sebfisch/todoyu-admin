@@ -27,7 +27,6 @@
  */
 class TodoyuPanelWidgetAdminModules extends TodoyuPanelWidget implements TodoyuPanelWidgetIf {
 
-
 	/**
 	 * Admin modules panel widget constructor
 	 *

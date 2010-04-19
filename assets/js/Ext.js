@@ -26,7 +26,7 @@ Todoyu.Ext.admin = {
 	/**
 	 * Load module
 	 *
-	 * @param	String	module
+	 * @param	{String}	module
 	 */
 	loadModule: function(module) {
 		var url		= Todoyu.getUrl('admin', 'module');
