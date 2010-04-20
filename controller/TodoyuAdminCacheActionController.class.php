@@ -20,7 +20,6 @@
 
 /**
  * Admin cache action controller
- *
  */
 class TodoyuAdminCacheActionController extends TodoyuActionController {
 
