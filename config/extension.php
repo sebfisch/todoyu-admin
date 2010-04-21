@@ -25,7 +25,6 @@
  * @subpackage	Admin
  */
 
-
 Todoyu::$CONFIG['EXT']['admin']['defaultModule'] = 'extensions';
 
 ?>

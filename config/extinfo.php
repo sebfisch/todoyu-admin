@@ -22,7 +22,6 @@
  * Various admin extension info data
  */
 
-
 Todoyu::$CONFIG['EXT']['admin']['info'] = array(
 	'title'			=> 'Administration Module',
 	'description' 	=> 'Module for Configuration and Administration',
@@ -39,6 +38,5 @@ Todoyu::$CONFIG['EXT']['admin']['info'] = array(
 		'system'	=> true
 	)
 );
-
 
 ?>

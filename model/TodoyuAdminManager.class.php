@@ -97,7 +97,7 @@ class TodoyuAdminManager {
 
 
 	/**
-	 * Check if the key belongs to a registered module
+	 * Check whether the key belongs to a registered module
 	 *
 	 * @param	String		$module
 	 * @return	Boolean
