@@ -28,6 +28,13 @@
 class TodoyuAdminRenderer {
 
 	/**
+	 * Extension key
+	 */
+	const EXTKEY = 'admin';
+
+
+
+	/**
 	 * Render module
 	 *
 	 * @param	String		$module		e.g. 'extensions' / 'records' / 'rights' / etc.
@@ -62,9 +69,7 @@ class TodoyuAdminRenderer {
 	 * @return	String
 	 */
 	public static function renderPanelWidgets() {
-		$params	= array();
-
-		return TodoyuPanelWidgetRenderer::renderPanelWidgets('admin', $params);
+		return TodoyuPanelWidgetRenderer::renderPanelWidgets(self::EXTKEY);
 	}
 
 }
