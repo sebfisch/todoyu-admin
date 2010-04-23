@@ -43,7 +43,7 @@ class TodoyuPanelWidgetAdminModules extends TodoyuPanelWidget implements TodoyuP
 			'adminmodules',							// panel widget ID
 			'LLL:panelwidget-adminmodules.title',	// widget title text
 			$config,								// widget config array
-			$params,								// widget params
+			$params,								// widget parameters
 			$idArea									// area ID
 		);
 
