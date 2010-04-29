@@ -35,7 +35,7 @@ class TodoyuAdminManager {
 	 * @param	String		$renderFunction		Function ref to the content render function
 	 * @param	Integer		$position			Position in menu
 	 */
-	public static function addModule($module, $label, $renderFuncContent, $renderFuncTabs, $position = 100, array $assetConf = array()) {
+	public static function addModule($module, $label, $renderFuncContent, $renderFuncTabs, $position = 100) {
 		$position	= intval($position);
 
 		Todoyu::$CONFIG['EXT']['admin']['modules'][$module] = array(
@@ -45,8 +45,7 @@ class TodoyuAdminManager {
 				'content'	=> $renderFuncContent,
 				'tabs'		=> $renderFuncTabs
 			),
-			'position'		=> $position,
-			'assetConf'		=> $assetConf
+			'position'		=> $position
 		);
 	}
 
