@@ -28,7 +28,7 @@
 class TodoyuAdminRenderer {
 
 	/**
-	 * Extension key
+	 * @var	String		Extension key
 	 */
 	const EXTKEY = 'admin';
 
