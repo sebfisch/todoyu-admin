@@ -20,4 +20,9 @@
 		<label index="page.title">Администрирование</label>
 		<label index="headlet.label">Администратор</label>
 	</labels>
+	<labels lang="fr_FR">
+		<label index="ext.title">Administration</label>
+		<label index="page.title">Administration</label>
+		<label index="headlet.label">Administration</label>
+	</labels>
 </locallang>
