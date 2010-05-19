@@ -9,4 +9,7 @@
 	<labels lang="pt_BR">
 		<label index="title">Módulos de Administração</label>
 	</labels>
+	<labels lang="ru_RU">
+		<label index="title">Администрирование</label>
+	</labels>
 </locallang>
