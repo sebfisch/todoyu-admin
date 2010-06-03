@@ -25,4 +25,9 @@
 		<label index="page.title">Administration</label>
 		<label index="headlet.label">Administration</label>
 	</labels>
+	<labels lang="nl_NL">
+		<label index="ext.title">Administratie</label>
+		<label index="page.title">Administratie</label>
+		<label index="headlet.label">Admin</label>
+	</labels>
 </locallang>

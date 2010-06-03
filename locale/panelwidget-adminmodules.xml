@@ -15,4 +15,7 @@
 	<labels lang="fr_FR">
 		<label index="title">Module d'administration</label>
 	</labels>
+		<labels lang="nl_NL">
+		<label index="title">Admin-module</label>
+	</labels>
 </locallang>
