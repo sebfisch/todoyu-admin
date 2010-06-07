@@ -30,4 +30,9 @@
 		<label index="page.title">Administratie</label>
 		<label index="headlet.label">Admin</label>
 	</labels>
+	<labels lang="cs_CZ">
+		<label index="ext.title">Správcovství</label>
+		<label index="page.title">Správcovství</label>
+		<label index="headlet.label">Správce</label>
+	</labels>
 </locallang>
