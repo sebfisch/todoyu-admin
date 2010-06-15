@@ -21,4 +21,7 @@
 	<labels lang="cs_CZ">
 		<label index="title">Moduly správce</label>
 	</labels>
+	<labels lang="ja_JP">
+		<label index="title">管理モジュール</label>
+	</labels>
 </locallang>

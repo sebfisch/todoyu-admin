@@ -35,4 +35,9 @@
 		<label index="page.title">Správcovství</label>
 		<label index="headlet.label">Správce</label>
 	</labels>
+	<labels lang="ja_JP">
+		<label index="ext.title">管理</label>
+		<label index="page.title">管理</label>
+		<label index="headlet.label">管理</label>
+	</labels>
 </locallang>
