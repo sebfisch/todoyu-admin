@@ -43,11 +43,6 @@ Todoyu::$CONFIG['EXT']['admin']['assets'] = array(
 			'position'	=> 100
 		),
 		array(
-			'file'		=> 'ext/admin/assets/css/global.css',
-			'media'		=> 'all',
-			'position'	=> 100
-		),
-		array(
 			'file'		=> 'ext/admin/assets/css/panelwidget-adminmodules.css',
 			'media'		=> 'all',
 			'position'	=> 100
