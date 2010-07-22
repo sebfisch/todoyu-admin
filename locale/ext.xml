@@ -40,4 +40,9 @@
 		<label index="page.title">管理</label>
 		<label index="headlet.label">管理</label>
 	</labels>
+	<labels lang="sr_RS">
+		<label index="ext.title">Администрација</label>
+		<label index="page.title">Администрација</label>
+		<label index="headlet.label">Администрација</label>
+	</labels>
 </locallang>
