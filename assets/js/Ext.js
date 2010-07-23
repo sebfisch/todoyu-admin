@@ -18,9 +18,9 @@
 *****************************************************************************/
 
 Todoyu.Ext.admin = {
-	
+
 	Headlet: {},
-	
+
 	PanelWidget: {},
 
 	/**
@@ -38,5 +38,5 @@ Todoyu.Ext.admin = {
 
 		Todoyu.Ui.update('admin-content', url, options);
 	}
-	
+
 };
