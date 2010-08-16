@@ -44,35 +44,30 @@ class TodoyuAdminExtActionController extends TodoyuActionController {
 	 * @return	String
 	 */
 	public function defaultAction(array $params) {
-			// Set active tab and submenu
-		TodoyuFrontend::setActiveTab('todoyu');
-//		TodoyuFrontend::setActiveSubmenuTab('todoyu', 'admin');
-
 		TodoyuPage::init('ext/admin/view/ext.tmpl');
 		TodoyuPage::setTitle('LLL:admin.page.title');
 
+		TodoyuFrontend::setActiveTab('none');
+
 			// Load config
 		TodoyuExtensions::loadAllAdmin();
-
 
 			// Get current admin module
 		$module	= $params['mod'];
 		if( ! TodoyuAdminManager::isModule($module) ) {
 			$module = TodoyuAdminManager::getActiveModule();
+		} else {
+				// Save current module
+			TodoyuAdminPreferences::saveActiveModule($module);
 		}
-			// Save current module
-		TodoyuAdminPreferences::saveActiveModule($module);
 
 		TodoyuPage::set('bodyClasses', 'module' . ucfirst($module));
 
-
-		$moduleTabs		= TodoyuAdminRenderer::renderModuleTabs($module, $params);
-		$moduleContent	= TodoyuAdminRenderer::renderModuleContent($module, $params);
 		$panelWidgets	= TodoyuAdminRenderer::renderPanelWidgets();
+		$fullContent	= TodoyuAdminRenderer::renderModule($module);
 
-		TodoyuPage::set('panelWidgets', $panelWidgets);
-		TodoyuPage::set('tabs', $moduleTabs);
-		TodoyuPage::set('content', $moduleContent);
+		TodoyuPage::setPanelWidgets($panelWidgets);
+		TodoyuPage::setFullContent($fullContent);
 
 			// Render output
 		return TodoyuPage::render();

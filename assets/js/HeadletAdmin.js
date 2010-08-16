@@ -7,7 +7,7 @@ Todoyu.Ext.admin.Headlet.Admin = {
 	},
 
 	onButtonClick: function(event) {
-		Todoyu.goTo('admin', 'ext');
+		Todoyu.goTo('admin');
 	}
 
 };

@@ -28,35 +28,14 @@
 class TodoyuAdminRenderer {
 
 	/**
-	 * @var	String		Extension key
-	 */
-	const EXTKEY = 'admin';
-
-
-
-	/**
-	 * Render module
+	 * Render fullContent of a module
 	 *
-	 * @param	String		$module		e.g. 'extensions' / 'records' / 'rights' / etc.
+	 * @param	String		$module
+	 * @param	Array		$params
 	 * @return	String
 	 */
-	public static function renderModuleContent($module, array $params = array()) {
-		$renderFunc = TodoyuAdminManager::getModuleRenderFunction($module, 'content');
-
-		return TodoyuFunction::callUserFunction($renderFunc, $params);
-	}
-
-
-
-	/**
-	 * Render tabs of given module inside admin area
-	 *
-	 * @param	String	$module			e.g. 'extensions' / 'records' / 'rights' / etc.
-	 * @param	Array	$params
-	 * @return	String
-	 */
-	public static function renderModuleTabs($module, array $params = array()) {
-		$renderFunc = TodoyuAdminManager::getModuleRenderFunction($module, 'tabs');
+	public static function renderModule($module, array $params = array()) {
+		$renderFunc = TodoyuAdminManager::getModuleRenderFunction($module);
 
 		return TodoyuFunction::callUserFunction($renderFunc, $params);
 	}
@@ -69,7 +48,7 @@ class TodoyuAdminRenderer {
 	 * @return	String
 	 */
 	public static function renderPanelWidgets() {
-		return TodoyuPanelWidgetRenderer::renderPanelWidgets(self::EXTKEY);
+		return TodoyuPanelWidgetRenderer::renderPanelWidgets('admin');
 	}
 
 }

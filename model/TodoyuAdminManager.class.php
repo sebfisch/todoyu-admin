@@ -35,16 +35,15 @@ class TodoyuAdminManager {
 	 * @param	String		$renderFunction		Function ref to the content render function
 	 * @param	Integer		$position			Position in menu
 	 */
-	public static function addModule($module, $label, $renderFuncContent, $renderFuncTabs, $position = 100) {
+	public static function addModule($module, $label, $renderFunction, $position = 100) {
 		$position	= intval($position);
+
+		TodoyuExtensions::loadAllAdmin();
 
 		Todoyu::$CONFIG['EXT']['admin']['modules'][$module] = array(
 			'key'			=> $module,
 			'label'			=> $label,
-			'render'		=> array(
-				'content'	=> $renderFuncContent,
-				'tabs'		=> $renderFuncTabs
-			),
+			'render'		=> $renderFunction,
 			'position'		=> $position
 		);
 	}
@@ -74,6 +73,8 @@ class TodoyuAdminManager {
 	 * @return	Array
 	 */
 	public static function getModules() {
+		TodoyuExtensions::loadAllAdmin();
+
 		if( is_array( Todoyu::$CONFIG['EXT']['admin']['modules'] ) ) {
 			return TodoyuArray::sortByLabel( Todoyu::$CONFIG['EXT']['admin']['modules'] );
 		} else {
@@ -89,8 +90,10 @@ class TodoyuAdminManager {
 	 * @param	String		$module		Module key
 	 * @return	Array		[class,method]
 	 */
-	public static function getModuleRenderFunction($module, $type = 'content') {
-		return Todoyu::$CONFIG['EXT']['admin']['modules'][$module]['render'][$type];
+	public static function getModuleRenderFunction($module) {
+		TodoyuExtensions::loadAllAdmin();
+
+		return Todoyu::$CONFIG['EXT']['admin']['modules'][$module]['render'];
 	}
 
 
@@ -102,7 +105,9 @@ class TodoyuAdminManager {
 	 * @return	Boolean
 	 */
 	public static function isModule($module) {
-		return is_array(Todoyu::$CONFIG['EXT']['admin']['modules'][$module]);
+		TodoyuExtensions::loadAllAdmin();
+
+		return is_string($module) && is_array(Todoyu::$CONFIG['EXT']['admin']['modules'][$module]);
 	}
 }
 

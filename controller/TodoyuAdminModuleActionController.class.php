@@ -31,20 +31,18 @@ class TodoyuAdminModuleActionController extends TodoyuActionController {
 	 *
 	 * @param	Array		$params
 	 */
-	public static function init(array $params) {
+	public function init(array $params) {
 		TodoyuRightsManager::restrictAdmin();
 	}
 
 
+	public function loadAction(array $params) {
+		$module	= trim($params['module']);
 
-	/**
-	 * Admin module default action controller method
-	 *
-	 * @param	Array	$params
-	 * @return	String
-	 */
-	public function defaultAction(array $params) {
-		return TodoyuAdminRenderer::renderModuleContent($params['mod']);
+			// Save current module
+		TodoyuAdminPreferences::saveActiveModule($module);
+
+		return TodoyuAdminRenderer::renderModule($module, $params);
 	}
 
 }

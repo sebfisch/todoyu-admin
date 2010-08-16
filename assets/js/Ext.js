@@ -23,20 +23,52 @@ Todoyu.Ext.admin = {
 
 	PanelWidget: {},
 
+	init: function() {
+		this.PanelWidget.AdminModules.init();	
+	},
+
 	/**
-	 * Load module
+	 * Load admin module content
 	 *
 	 * @param	{String}	module
+	 * @param	{Object}	params
 	 */
-	loadModule: function(module) {
+	loadModule: function(module, params) {
 		var url		= Todoyu.getUrl('admin', 'module');
 		var options	= {
 			'parameters': {
-				'mod': module
-			}
+				'action': 'load',
+				'module': module
+			},
+			'onComplete': this.onModuleLoaded.bind(this, module)
 		};
 
-		Todoyu.Ui.update('admin-content', url, options);
+		if( typeof(params) === 'object' ) {
+			$H(options.parameters).update(params).toObject();
+		}
+
+		Todoyu.Ui.updateContent(url, options);
+	},
+
+
+
+	/**
+	 * Handler when module content is loaded
+	 *
+	 * @param	{String}		module
+	 * @param	{Ajax.Response}	response
+	 */
+	onModuleLoaded: function(module, response) {
+		this.updateBodyClassName(module);
+	},
+
+	updateBodyClassName: function(module) {
+		var moduleClass = $w(document.body.className).detect(function(class){
+			return class.substr(0, 6) === 'module';
+		});
+		var newClass	= 'module' + module.capitalize();
+
+		document.body.replaceClassName(moduleClass, newClass);
 	}
 
 };
