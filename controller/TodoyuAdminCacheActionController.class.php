@@ -33,7 +33,7 @@ class TodoyuAdminCacheActionController extends TodoyuActionController {
 	}
 
 	public function clearAction(array $params) {
-		TodoyuHeader::sendHeaderPlain();
+		TodoyuHeader::sendTypeText();
 
 		if( TodoyuAuth::isAdmin() ) {
 			TodoyuCacheManager::clearAllCache();
