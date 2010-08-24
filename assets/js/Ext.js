@@ -24,7 +24,7 @@ Todoyu.Ext.admin = {
 	PanelWidget: {},
 
 	init: function() {
-		this.PanelWidget.AdminModules.init();	
+		this.PanelWidget.AdminModules.init();
 	},
 
 	/**
@@ -59,9 +59,18 @@ Todoyu.Ext.admin = {
 	 * @param	{Ajax.Response}	response
 	 */
 	onModuleLoaded: function(module, response) {
+			// Make sure the module is activated in the panel widget
+		this.PanelWidget.AdminModules.activate(module);
+
 		this.updateBodyClassName(module);
 	},
 
+
+	/**
+	 * Set body class for easy styling
+	 *
+	 * @param	{String}	module
+	 */
 	updateBodyClassName: function(module) {
 		var moduleClass = $w(document.body.className).detect(function(class){
 			return class.substr(0, 6) === 'module';
