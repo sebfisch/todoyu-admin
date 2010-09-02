@@ -72,10 +72,11 @@ Todoyu.Ext.admin = {
 	 * @param	{String}	module
 	 */
 	updateBodyClassName: function(module) {
-		var moduleClass = $w(document.body.className).detect(function(class){
-			return class.substr(0, 6) === 'module';
+		var moduleClass;
+		moduleClass = $w(document.body.className).detect(function(oldClass) {
+			return oldClass.substr(0, 6) === 'module';
 		});
-		var newClass	= 'module' + module.capitalize();
+		var newClass = 'module' + module.capitalize();
 
 		document.body.replaceClassName(moduleClass, newClass);
 	}
