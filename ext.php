@@ -30,8 +30,8 @@ define('EXTID_ADMIN', 100);
 define('PATH_EXT_ADMIN', PATH_EXT . '/admin');
 
 	// Register module locales
-TodoyuLanguage::register('admin', PATH_EXT_ADMIN . '/locale/ext.xml');
-TodoyuLanguage::register('panelwidget-adminmodules', PATH_EXT_ADMIN . '/locale/panelwidget-adminmodules.xml');
+TodoyuLabelManager::register('admin', 'admin', 'ext.xml');
+TodoyuLabelManager::register('panelwidget-adminmodules', 'admin', 'panelwidget-adminmodules.xml');
 
 	// Request configurations
 	// @notice	Auto-loaded configs if available: admin, assets, create, contextmenu, extinfo, filters, form, page, panelwidgets, rights, search
