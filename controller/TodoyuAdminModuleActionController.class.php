@@ -36,6 +36,13 @@ class TodoyuAdminModuleActionController extends TodoyuActionController {
 	}
 
 
+
+	/**
+	 * Load and display module
+	 *
+	 * @param	Array	$params
+	 * @return	String
+	 */
 	public function loadAction(array $params) {
 		$module	= trim($params['module']);
 
