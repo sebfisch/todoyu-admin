@@ -44,7 +44,7 @@ Todoyu.Ext.admin = {
 		};
 
 		if( typeof(params) === 'object' ) {
-			$H(options.parameters).update(params).toObject();
+			options.parameters = $H(options.parameters).update(params).toObject();
 		}
 
 		Todoyu.Ui.updateContent(url, options);
