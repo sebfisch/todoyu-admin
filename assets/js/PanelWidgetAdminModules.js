@@ -17,10 +17,29 @@
  * This copyright notice MUST APPEAR in all copies of the script.
  *****************************************************************************/
 
+/**
+ * @module	Admin
+ */
+
+/**
+ * Panelwidget which lists all admin modules
+ *
+ * @class		AdminModules
+ * @namespace	Todoyu.Ext.admin.PanelWidget
+ */
 Todoyu.Ext.admin.PanelWidget.AdminModules = {
 
+	/**
+	 * Reference to extension
+	 * @property	ext
+	 * @type		Object
+	 */
 	ext: Todoyu.Ext.admin,
 
+	/**
+	 * @property	list
+	 * @type		Element
+	 */
 	list: null,
 
 	init: function() {

@@ -17,19 +17,46 @@
 * This copyright notice MUST APPEAR in all copies of the script.
 *****************************************************************************/
 
+/**
+ * @module	Admin
+ */
+
+/**
+ * Main admin object
+ * @class		Admin
+ * @namespace	Todoyu.Ext
+ */
 Todoyu.Ext.admin = {
 
+	/**
+	 * @property	Headlet
+	 * @type		Object
+	 */
 	Headlet: {},
 
+	/**
+	 * @property	PanelWidget
+	 * @type		Object
+	 */
 	PanelWidget: {},
 
+
+
+	/**
+	 * Initialize admin
+	 *
+	 * @method	init
+	 */
 	init: function() {
 		this.PanelWidget.AdminModules.init();
 	},
 
+
+
 	/**
 	 * Load admin module content
 	 *
+	 * @method	loadModule
 	 * @param	{String}	module
 	 * @param	{Object}	params
 	 */
@@ -55,6 +82,7 @@ Todoyu.Ext.admin = {
 	/**
 	 * Handler when module content is loaded
 	 *
+	 * @method	onModuleLoaded
 	 * @param	{String}		module
 	 * @param	{Ajax.Response}	response
 	 */
@@ -69,6 +97,7 @@ Todoyu.Ext.admin = {
 	/**
 	 * Set body class for easy styling
 	 *
+	 * @method	updateBodyClassName
 	 * @param	{String}	module
 	 */
 	updateBodyClassName: function(module) {
