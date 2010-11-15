@@ -61,7 +61,8 @@ class TodoyuAdminExtActionController extends TodoyuActionController {
 			TodoyuAdminPreferences::saveActiveModule($module);
 		}
 
-		TodoyuPage::set('bodyClasses', 'module' . ucfirst($module));
+		TodoyuPage::addBodyClass('module' . ucfirst($module));
+//		TodoyuPage::set('bodyClasses', 'module' . ucfirst($module));
 
 		$panelWidgets	= TodoyuAdminRenderer::renderPanelWidgets();
 		$fullContent	= TodoyuAdminRenderer::renderModule($module);
