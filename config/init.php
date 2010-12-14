@@ -18,23 +18,6 @@
 * This copyright notice MUST APPEAR in all copies of the script.
 *****************************************************************************/
 
-/**
- * Extension main file for admin extension
- *
- * @package		Todoyu
- * @subpackage	Admin
- */
-
-	// Declare ext ID, path
-define('EXTID_ADMIN', 100);
-define('PATH_EXT_ADMIN', PATH_EXT . '/admin');
-
-	// Register module locales
-TodoyuLabelManager::register('admin', 'admin', 'ext.xml');
-TodoyuLabelManager::register('panelwidget-adminmodules', 'admin', 'panelwidget-adminmodules.xml');
-
-	// Request configurations
-	// @notice	Auto-loaded configs if available: admin, assets, create, contextmenu, extinfo, filters, form, page, panelwidgets, rights, search
-require_once( PATH_EXT_ADMIN . '/config/extension.php' );
+Todoyu::$CONFIG['EXT']['admin']['defaultModule'] = 'extensions';
 
 ?>

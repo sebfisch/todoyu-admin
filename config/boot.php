@@ -19,12 +19,17 @@
 *****************************************************************************/
 
 /**
- * General configuration for admin extension
+ * Extension main file for admin extension
  *
  * @package		Todoyu
  * @subpackage	Admin
  */
 
-Todoyu::$CONFIG['EXT']['admin']['defaultModule'] = 'extensions';
+	// Declare ext ID, path
+define('EXTID_ADMIN', 100);
+define('PATH_EXT_ADMIN', PATH_EXT . '/admin');
+
+TodoyuLabelManager::register('admin', 'admin', 'ext.xml');
+TodoyuLabelManager::register('panelwidget-adminmodules', 'admin', 'panelwidget-adminmodules.xml');
 
 ?>
