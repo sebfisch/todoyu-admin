@@ -32,6 +32,14 @@ class TodoyuAdminCacheActionController extends TodoyuActionController {
 		TodoyuRightsManager::restrictAdmin();
 	}
 
+
+
+	/**
+	 * Clear todoyu cache (admin only)
+	 *
+	 * @param	Array	$params
+	 * @return	String
+	 */
 	public function clearAction(array $params) {
 		TodoyuHeader::sendTypeText();
 
