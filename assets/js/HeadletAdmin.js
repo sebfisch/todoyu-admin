@@ -40,7 +40,7 @@ Todoyu.Ext.admin.Headlet.Admin = {
 		}
 	},
 
-	
+
 
 	/**
 	 * Handler when button is clicked
