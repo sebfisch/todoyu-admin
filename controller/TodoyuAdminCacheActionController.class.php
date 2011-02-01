@@ -46,7 +46,7 @@ class TodoyuAdminCacheActionController extends TodoyuActionController {
 		if( TodoyuAuth::isAdmin() ) {
 			TodoyuCacheManager::clearAllCache();
 
-			return 'All Cache cleared';
+			return 'All Cache Cleared';
 		} else {
 			return 'You have no access to clear the cache!';
 		}
