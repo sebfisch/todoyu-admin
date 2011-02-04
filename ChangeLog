@@ -1,7 +1,7 @@
 todoyu admin extension changelog
 
 admin 1.1.0 (requires core >= 2.1) - not released yet
-	* Updated loading structure: (core: boot.php, init: request,) extensions: init.php
+	* Changed: Updated loading structure: (core: boot.php, init: request,) extensions: init.php
 
 
 admin 1.0.6 - not released yet
