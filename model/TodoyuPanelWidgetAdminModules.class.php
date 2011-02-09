@@ -61,7 +61,7 @@ class TodoyuPanelWidgetAdminModules extends TodoyuPanelWidget implements TodoyuP
 		$modules	= TodoyuAdminManager::getModules();
 		$active		= TodoyuAdminPreferences::getActiveModule();
 
-		if( ! $active )	{
+		if( ! $active ) {
 			$active = $modules[0]['key'];
 		}
 
