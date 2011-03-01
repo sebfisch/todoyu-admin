@@ -25,7 +25,7 @@
  * @package		Todoyu
  * @subpackage	Core
  */
-class TodoyuHeadletAdmin extends TodoyuHeadletTypeButton {
+class TodoyuAdminHeadletAdmin extends TodoyuHeadletTypeButton {
 
 	/**
 	 * Initialize headlets

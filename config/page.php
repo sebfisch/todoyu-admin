@@ -20,7 +20,7 @@
 
 	// Only admins can access the admin module
 if( TodoyuAuth::isAdmin() ) {
-	TodoyuHeadManager::addHeadlet('TodoyuHeadletAdmin', 20);
+	TodoyuHeadManager::addHeadlet('TodoyuAdminHeadletAdmin', 20);
 }
 
 ?>

@@ -23,6 +23,6 @@
  */
 
 	// add default panel widgets
-TodoyuPanelWidgetManager::addDefaultPanelWidget('admin', 'TodoyuPanelWidgetAdminModules', 10);
+TodoyuPanelWidgetManager::addDefaultPanelWidget('admin', 'TodoyuAdminPanelWidgetModules', 10);
 
 ?>
