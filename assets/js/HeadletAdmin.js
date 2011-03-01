@@ -27,20 +27,7 @@
  * @class		Admin
  * @namespace	Todoyu.Ext.admin.Headlet
  */
-Todoyu.Ext.admin.Headlet.Admin = {
-
-	/**
-	 * Initialize headlet
-	 *
-	 * @method	init
-	 */
-	init: function() {
-		if( document.location.href.toQueryParams().ext === 'admin' ) {
-			//this.headlet.setActive('admin');
-		}
-	},
-
-
+Todoyu.Ext.admin.Headlet.Admin = Class.create(Todoyu.Headlet, {
 
 	/**
 	 * Handler when button is clicked
@@ -52,4 +39,4 @@ Todoyu.Ext.admin.Headlet.Admin = {
 		Todoyu.goTo('admin');
 	}
 
-};
+});
