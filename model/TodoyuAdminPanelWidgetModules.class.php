@@ -41,7 +41,7 @@ class TodoyuAdminPanelWidgetModules extends TodoyuPanelWidget implements TodoyuP
 		parent::__construct(
 			'admin',								// ext key
 			'adminmodules',							// panel widget ID
-			'LLL:panelwidget-adminmodules.title',	// widget title text
+			'LLL:admin.panelwidget-adminmodules.title',	// widget title text
 			$config,								// widget config array
 			$params,								// widget parameters
 			$idArea									// area ID

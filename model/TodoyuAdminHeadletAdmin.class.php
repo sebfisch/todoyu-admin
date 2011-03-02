@@ -43,7 +43,7 @@ class TodoyuAdminHeadletAdmin extends TodoyuHeadletTypeButton {
 	 * @return	String
 	 */
 	public function getLabel() {
-		return Label('admin.headlet.label');
+		return Label('admin.ext.headlet.label');
 	}
 
 }
