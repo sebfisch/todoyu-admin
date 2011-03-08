@@ -25,7 +25,7 @@
  * @package		Todoyu
  * @subpackage	Admin
  */
-class TodoyuAdminPanelWidgetModules extends TodoyuPanelWidget implements TodoyuPanelWidgetIf {
+class TodoyuAdminPanelWidgetModules extends TodoyuPanelWidget {
 
 	/**
 	 * Admin modules panel widget constructor
@@ -57,7 +57,7 @@ class TodoyuAdminPanelWidgetModules extends TodoyuPanelWidget implements TodoyuP
 	 *
 	 * @return	String
 	 */
-	public function renderContent() {
+	protected function renderContent() {
 		$modules	= TodoyuAdminManager::getModules();
 		$active		= TodoyuAdminPreferences::getActiveModule();
 
@@ -78,18 +78,6 @@ class TodoyuAdminPanelWidgetModules extends TodoyuPanelWidget implements TodoyuP
 		return $content;
 	}
 
-
-
-	/**
-	 * Render widget including content
-	 *
-	 * @return	String
-	 */
-	public function render() {
-		$this->renderContent();
-
-		return parent::render();
-	}
 
 
 
