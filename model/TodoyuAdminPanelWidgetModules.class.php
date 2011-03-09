@@ -35,16 +35,13 @@ class TodoyuAdminPanelWidgetModules extends TodoyuPanelWidget {
 	 * @param	Integer		$idArea
 	 * @param	Boolean 	$expanded
 	 */
-	public function __construct(array $config, array $params = array(), $idArea = 0) {
-		$idArea	= intval($idArea);
-
+	public function __construct(array $config, array $params = array()) {
 		parent::__construct(
 			'admin',								// ext key
 			'adminmodules',							// panel widget ID
 			'LLL:admin.panelwidget-adminmodules.title',	// widget title text
 			$config,								// widget config array
-			$params,								// widget parameters
-			$idArea									// area ID
+			$params								// widget parameters
 		);
 
 		$this->addHasIconClass();
