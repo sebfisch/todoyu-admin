@@ -31,6 +31,7 @@ Todoyu.Ext.admin.PanelWidget.AdminModules = {
 
 	/**
 	 * Reference to extension
+	 *
 	 * @property	ext
 	 * @type		Object
 	 */
@@ -42,15 +43,38 @@ Todoyu.Ext.admin.PanelWidget.AdminModules = {
 	 */
 	list: null,
 
+
+
+	/**
+	 * Initialize admin modules widget
+	 *
+	 * @method	init
+	 */
 	init: function() {
 		this.list = $('admin-modules');
 	},
 
+
+
+	/**
+	 * Load and activate given module
+	 *
+	 * @method	module
+	 * @param	{String}	module
+	 */
 	module: function(module) {
 		this.ext.loadModule(module);
 		this.activate(module);
 	},
 
+
+
+	/**
+	 * Activate given module
+	 *
+	 * @method	activate
+	 * @param	{String}	module
+	 */
 	activate: function(module) {
 		var current = this.getActive();
 
@@ -62,10 +86,24 @@ Todoyu.Ext.admin.PanelWidget.AdminModules = {
 	},
 
 
+	/**
+	 * Get currently activated module option
+	 *
+	 * @method	getActive
+	 * @return	Element
+	 */
 	getActive: function() {
 		return this.list.down('li.active');
 	},
 
+
+
+	/**
+	 * Set given module option active
+	 *
+	 * @method	setActive
+	 * @param	{String}	module
+	 */
 	setActive: function(module) {
 		this.list.down('li.' + module).addClassName('active');
 	}
