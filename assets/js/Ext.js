@@ -23,6 +23,7 @@
 
 /**
  * Main admin object
+ *
  * @class		Admin
  * @namespace	Todoyu.Ext
  */
