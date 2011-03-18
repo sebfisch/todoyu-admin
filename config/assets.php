@@ -28,31 +28,31 @@
 Todoyu::$CONFIG['EXT']['admin']['assets'] = array(
 	'js' => array(
 		array(
-			'file'		=> 'ext/admin/assets/js/Ext.js',
+			'file'		=> 'ext/admin/asset/js/Ext.js',
 			'position'	=> 100
 		),
 		array(
-			'file'		=> 'ext/admin/assets/js/PanelWidgetAdminModules.js',
+			'file'		=> 'ext/admin/asset/js/PanelWidgetAdminModules.js',
 			'position'	=> 110
 		),
 		array(
-			'file'		=> 'ext/admin/assets/js/HeadletAdmin.js',
+			'file'		=> 'ext/admin/asset/js/HeadletAdmin.js',
 			'position'	=> 110
 		)
 	),
 	'css' => array(
 		array(
-			'file'		=> 'ext/admin/assets/css/ext.css',
+			'file'		=> 'ext/admin/asset/css/ext.css',
 			'media'		=> 'all',
 			'position'	=> 100
 		),
 		array(
-			'file'		=> 'ext/admin/assets/css/panelwidget-adminmodules.css',
+			'file'		=> 'ext/admin/asset/css/panelwidget-adminmodules.css',
 			'media'		=> 'all',
 			'position'	=> 100
 		),
 		array(
-			'file'		=> 'ext/admin/assets/css/headlet-admin.css',
+			'file'		=> 'ext/admin/asset/css/headlet-admin.css',
 			'media'		=> 'all',
 			'position'	=> 110
 		)
