@@ -1,4 +1,10 @@
 todoyu selenium testsuite steps: admin extension
 ------------------------------------------------
 
-* no steps yet
+* admin area
+	go to area (use admin headlet)
+	check area elements presents, page title, area sub tabs
+* admin modules panelwidget
+	check presents, all sub options available
+	module extensions list
+		all basic extensions listed?
