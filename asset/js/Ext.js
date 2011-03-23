@@ -64,11 +64,11 @@ Todoyu.Ext.admin = {
 	loadModule: function(module, params) {
 		var url		= Todoyu.getUrl('admin', 'module');
 		var options	= {
-			'parameters': {
-				'action': 'load',
+			parameters: {
+				action: 'load',
 				'module': module
 			},
-			'onComplete': this.onModuleLoaded.bind(this, module)
+			onComplete: this.onModuleLoaded.bind(this, module)
 		};
 
 		if( typeof(params) === 'object' ) {
