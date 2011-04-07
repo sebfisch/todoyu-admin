@@ -1,15 +1,9 @@
 todoyu admin extension changelog
 
-admin 1.1.0 (requires core >= 2.1) - not released yet
-	* Feature: Cleanup (topical order and readability) of extension config (init.php) file
-	* Feature: Forms restyled
- 	* Changed: Updated loading structure: (core: boot.php, init: request,) extensions: init.php
- 	* Feature: Changed locale format
-
-
-admin 1.0.6 - not released yet
-	* Feature: Added placeholders for to-be spanish locale files
-	* Feature: Added changelog
+admin 1.1.0 - beta release
+	* Changed: Requires core 2.1
+	* Changed: Structure for 2.1
+	* Changed: All classes are prefixed with extension name
 
 
 admin 1.0.1 to 1.0.5 - 1.0.5 released 2011-01-17
