@@ -95,6 +95,7 @@ Todoyu.Ext.admin = {
 	},
 
 
+
 	/**
 	 * Set body class for easy styling
 	 *
