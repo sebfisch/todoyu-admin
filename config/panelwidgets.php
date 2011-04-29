@@ -22,7 +22,7 @@
  * Configure panel widgets to be shown in Admin area
  */
 
-	// add default panel widgets
+	// Add default panel widgets
 TodoyuPanelWidgetManager::addPanelWidget('admin', 'admin', 'Modules', 10);
 
 ?>

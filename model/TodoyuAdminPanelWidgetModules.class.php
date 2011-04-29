@@ -37,11 +37,11 @@ class TodoyuAdminPanelWidgetModules extends TodoyuPanelWidget {
 	 */
 	public function __construct(array $config, array $params = array()) {
 		parent::__construct(
-			'admin',								// ext key
-			'adminmodules',							// panel widget ID
+			'admin',									// ext key
+			'adminmodules',								// panel widget ID
 			'LLL:admin.panelwidget-adminmodules.title',	// widget title text
-			$config,								// widget config array
-			$params								// widget parameters
+			$config,									// widget config array
+			$params										// widget parameters
 		);
 
 		$this->addHasIconClass();
