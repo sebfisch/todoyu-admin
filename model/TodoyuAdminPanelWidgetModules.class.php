@@ -68,7 +68,7 @@ class TodoyuAdminPanelWidgetModules extends TodoyuPanelWidget {
 			'modules'	=> $modules
 		);
 
-		$content	= render($tmpl, $data);
+		$content	= Todoyu::render($tmpl, $data);
 
 		$this->setContent($content);
 
