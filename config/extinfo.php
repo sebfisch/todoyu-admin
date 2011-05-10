@@ -23,8 +23,8 @@
  */
 
 Todoyu::$CONFIG['EXT']['admin']['info'] = array(
-	'title'			=> 'Administration Module',
-	'description' 	=> 'Module for Configuration and Administration',
+	'title'			=> 'Administration Extension',
+	'description' 	=> 'Extension for configuration and maintaining of todoyu installations by administrators',
 	'author' 		=> array(
 		'name'		=> 'todoyu Core Developer Team',
 		'email'		=> 'team@todoyu.com',
