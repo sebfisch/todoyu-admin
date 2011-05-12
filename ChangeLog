@@ -39,5 +39,6 @@ admin 1.0.1 to 1.0.5 - 1.0.5 released 2011-01-17
 	* Bugfix: Fixed wrong filenames casing
 	* Bugfix: Added missing JS assets configs
 
+
 admin 1.0.0 - released 2010-05-10
 	* Changed: Declared state stable
