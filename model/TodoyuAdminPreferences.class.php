@@ -23,10 +23,11 @@ class TodoyuAdminPreferences {
 	/**
 	 * Save admin preference
 	 *
-	 * @param	String	$preference
-	 * @param	Mixed	$value
-	 * @param	Integer	$idItem
-	 * @param	Boolean	$unique
+	 * @param	String		$preference
+	 * @param	Mixed		$value
+	 * @param	Integer		$idItem
+	 * @param	Boolean		$unique
+	 * @return	Integer
 	 */
 	private static function save($preference, $value, $idItem = 0, $unique = false) {
 		$idItem	= intval($idItem);
@@ -42,6 +43,7 @@ class TodoyuAdminPreferences {
 	 * @param	String	$preference
 	 * @param	Integer	$idItem
 	 * @param	Boolean	$unserialize
+	 * @return	Integer
 	 */
 	private static function getPref($preference, $idItem = 0, $unserialize = false) {
 		$idItem	= intval($idItem);
@@ -56,6 +58,7 @@ class TodoyuAdminPreferences {
 	 *
 	 * @param	String	$preference
 	 * @param	Integer	$idItem
+	 * @return	Array
 	 */
 	private static function getPrefs($preference, $idItem = 0) {
 		$idItem	= intval($idItem);
