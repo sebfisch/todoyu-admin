@@ -36,7 +36,8 @@ Todoyu::$CONFIG['EXT']['admin']['info'] = array(
 		'depends' 	=> array(),
 		'conflicts' => array(),
 		'system'	=> true
-	)
+	),
+	'urlDocumentation'	=> 'http://doc.todoyu.com/?admin'
 );
 
 ?>
