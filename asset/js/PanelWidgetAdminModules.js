@@ -86,6 +86,7 @@ Todoyu.Ext.admin.PanelWidget.AdminModules = {
 	},
 
 
+
 	/**
 	 * Get currently activated module option
 	 *
