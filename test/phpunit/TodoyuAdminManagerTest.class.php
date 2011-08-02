@@ -62,7 +62,10 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 	 * @todo	implement	testAddModule()
 	 */
 	public function testAddModule() {
-
+		// Remove the following lines when you implement this test.
+		$this->markTestIncomplete(
+			'This test has not been implemented yet.'
+		);
 	}
 
 
@@ -127,9 +130,6 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 			$pattern	= '/Todoyu.{3,50}\:\:.{3,50}/';
 			$this->assertRegExp($pattern, $renderFunction);
 		}
-
-
-
 	}
 
 
