@@ -18,6 +18,13 @@
 * This copyright notice MUST APPEAR in all copies of the script.
 *****************************************************************************/
 
+/**
+ * Admin preferences
+ *
+ * @name 		Admin preferences
+ * @package		Todoyu
+ * @subpackage	Admin
+ */
 class TodoyuAdminPreferences {
 
 	/**
@@ -40,9 +47,9 @@ class TodoyuAdminPreferences {
 	/**
 	 * Get admin preference
 	 *
-	 * @param	String	$preference
-	 * @param	Integer	$idItem
-	 * @param	Boolean	$unserialize
+	 * @param	String		$preference
+	 * @param	Integer		$idItem
+	 * @param	Boolean		$unserialize
 	 * @return	Integer
 	 */
 	private static function getPref($preference, $idItem = 0, $unserialize = false) {
@@ -56,8 +63,8 @@ class TodoyuAdminPreferences {
 	/**
 	 * Get admin preferences
 	 *
-	 * @param	String	$preference
-	 * @param	Integer	$idItem
+	 * @param	String		$preference
+	 * @param	Integer		$idItem
 	 * @return	Array
 	 */
 	private static function getPrefs($preference, $idItem = 0) {
@@ -82,12 +89,11 @@ class TodoyuAdminPreferences {
 	/**
 	 * Get previously active admin area module
 	 *
-	 * @return String
+	 * @return	String
 	 */
 	public static function getActiveModule() {
 		return self::getPref('module');
 	}
-
 
 }
 
