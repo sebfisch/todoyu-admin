@@ -52,7 +52,7 @@ class TodoyuAdminPanelWidgetModules extends TodoyuPanelWidget {
 	 *
 	 * @return	String
 	 */
-	protected function renderContent() {
+	public function renderContent() {
 		$modules	= TodoyuAdminManager::getModules();
 		$active		= TodoyuAdminPreferences::getActiveModule();
 
