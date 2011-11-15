@@ -90,38 +90,34 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 	 * Test getModules
 	 */
 	public function testGetModules() {
-//		$activeModules	= TodoyuAdminManager::getModules();
-//
-//			// Assert modules present at all
-//		$expected	= 'array';
-//		$this->assertType($expected, $activeModules);
-//
-//			// Assert at least 5 modules (of sysmanager, which unittest is one of) present
-//		$amountModules	= sizeof($activeModules);
-//		$this->assertTrue($amountModules > 4);
-//
-//			// Assert presence of sysmanager module keys
-//		$reformConfig	= array('key'	=> 'key');
-//		$index	= 'key';
-//		$moduleKeys		= TodoyuArray::reformWithFieldAsIndex($activeModules, $reformConfig, false, $index);
-//
-//		foreach($this->testModuleKeys as $expectedModuleKey) {
-//			$this->assertArrayHasKey($expectedModuleKey, $moduleKeys);
-//		}
-//
-//			// Assert config of each module to contain: key, label and render callback
-//		foreach($activeModules as $activeModule) {
-//			$expected	= 'array';
-//			$this->assertType($expected, $activeModule);
-//
-//			$this->assertArrayHasKey('key', $activeModule);
-//			$this->assertArrayHasKey('label', $activeModule);
-//			$this->assertArrayHasKey('render', $activeModule);
-//		}
+		$activeModules	= TodoyuAdminManager::getModules();
 
-		$this->markTestIncomplete(
-			'This test has not been implemented yet.'
-		);
+			// Assert modules present at all
+		$expected	= 'array';
+		$this->assertType($expected, $activeModules);
+
+			// Assert at least 5 modules (of sysmanager, which unittest is one of) present
+		$amountModules	= sizeof($activeModules);
+		$this->assertTrue($amountModules > 4);
+
+			// Assert presence of sysmanager module keys
+		$reformConfig	= array('key'	=> 'key');
+		$index	= 'key';
+		$moduleKeys		= TodoyuArray::reformWithFieldAsIndex($activeModules, $reformConfig, false, $index);
+
+		foreach($this->testModuleKeys as $expectedModuleKey) {
+			$this->assertArrayHasKey($expectedModuleKey, $moduleKeys);
+		}
+
+			// Assert config of each module to contain: key, label and render callback
+		foreach($activeModules as $activeModule) {
+			$expected	= 'array';
+			$this->assertType($expected, $activeModule);
+
+			$this->assertArrayHasKey('key', $activeModule);
+			$this->assertArrayHasKey('label', $activeModule);
+			$this->assertArrayHasKey('render', $activeModule);
+		}
 	}
 
 
@@ -130,18 +126,14 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 	 * Test getModuleRenderFunction
 	 */
 	public function testGetModuleRenderFunction() {
-//		foreach($this->testModuleKeys as $moduleKey) {
-//			$renderFunction	= TodoyuAdminManager::getModuleRenderFunction($moduleKey);
-//
-//			$this->assertNotNull($renderFunction);
-//
-//			$pattern	= '/Todoyu.{3,50}\:\:.{3,50}/';
-//			$this->assertRegExp($pattern, $renderFunction);
-//		}
+		foreach($this->testModuleKeys as $moduleKey) {
+			$renderFunction	= TodoyuAdminManager::getModuleRenderFunction($moduleKey);
 
-		$this->markTestIncomplete(
-			'This test has not been implemented yet.'
-		);
+			$this->assertNotNull($renderFunction);
+
+			$pattern	= '/Todoyu.{3,50}\:\:.{3,50}/';
+			$this->assertRegExp($pattern, $renderFunction);
+		}
 	}
 
 
@@ -150,18 +142,14 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 	 * Test checking whether the key belongs to a registered module
 	 */
 	public function testIsModule() {
-//			// Check sysmanager modules
-//		foreach($this->testModuleKeys as $moduleKey) {
-//			$this->assertTrue(TodoyuAdminManager::isModule($moduleKey));
-//		}
-//
-//			// Check bogus module to fail verification
-//		$bogusModuleKey	= 'definitelynomodulekey';
-//		$this->assertFalse(TodoyuAdminManager::isModule($bogusModuleKey));
+			// Check sysmanager modules
+		foreach($this->testModuleKeys as $moduleKey) {
+			$this->assertTrue(TodoyuAdminManager::isModule($moduleKey));
+		}
 
-		$this->markTestIncomplete(
-			'This test has not been implemented yet.'
-		);
+			// Check bogus module to fail verification
+		$bogusModuleKey	= 'definitelynomodulekey';
+		$this->assertFalse(TodoyuAdminManager::isModule($bogusModuleKey));
 	}
 
 }
