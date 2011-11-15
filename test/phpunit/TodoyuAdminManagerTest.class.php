@@ -38,10 +38,13 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Sets up the fixture, for example, opens a network connection.
 	 * This method is called before a test is executed.
+	 * @todo reset db table
 	 */
 	protected function setUp() {
 			// Keys of sysmanager modules
 		$this->testModuleKeys	= array('extensions', 'records', 'rights', 'config', 'unittest');
+
+		TodoyuAuth::setPersonID(1);
 	}
 
 
@@ -51,7 +54,7 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 	 * This method is called after a test is executed.
 	 */
 	protected function tearDown() {
-
+		TodoyuAuth::setPersonID(0);
 	}
 
 
@@ -59,13 +62,15 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Test add module
 	 *
-	 * @todo	implement	testAddModule()
 	 */
 	public function testAddModule() {
-		// Remove the following lines when you implement this test.
-		$this->markTestIncomplete(
-			'This test has not been implemented yet.'
-		);
+		$this->assertFalse(TodoyuAdminManager::isModule('newmodule'));
+		$modulesBeforeAdd = TodoyuAdminManager::getModules();
+		TodoyuAdminManager::addModule('newmodule', 'New Module', 'TodoyuExtensionRenderClass::renderFunction', 200);
+		$modulesAfterAdd = TodoyuAdminManager::getModules();
+		$this->assertTrue(sizeof($modulesAfterAdd) == (sizeof($modulesBeforeAdd) + 1));
+		$this->assertTrue(TodoyuAdminManager::isModule('newmodule'));
+
 	}
 
 
@@ -74,14 +79,16 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 	 * Test getActiveModule
 	 */
 	public function testGetActiveModule() {
-//		$activeModule	= TodoyuAdminManager::getActiveModule();
-//
-//		$expected	= 'unittest';
-//		$this->assertEquals($expected, $activeModule);
+		// test if defaultModuleConfig is taken. Workaround until reset of db is done
+		TodoyuAuth::setPersonID(0);
+		$this->assertEquals(Todoyu::$CONFIG['EXT']['admin']['defaultModule'], TodoyuAdminManager::getActiveModule());
+		TodoyuAuth::setPersonID(1);
+		TodoyuAdminPreferences::saveActiveModule('config');
 
-		$this->markTestIncomplete(
-			'This test has not been implemented yet.'
-		);
+		$activeModule	= TodoyuAdminManager::getActiveModule();
+
+		$expected	= 'config';
+		$this->assertEquals($expected, $activeModule);
 	}
 
 
@@ -94,7 +101,7 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 
 			// Assert modules present at all
 		$expected	= 'array';
-		$this->assertType($expected, $activeModules);
+		$this->assertInternalType($expected, $activeModules);
 
 			// Assert at least 5 modules (of sysmanager, which unittest is one of) present
 		$amountModules	= sizeof($activeModules);
@@ -112,7 +119,7 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 			// Assert config of each module to contain: key, label and render callback
 		foreach($activeModules as $activeModule) {
 			$expected	= 'array';
-			$this->assertType($expected, $activeModule);
+			$this->assertInternalType($expected, $activeModule);
 
 			$this->assertArrayHasKey('key', $activeModule);
 			$this->assertArrayHasKey('label', $activeModule);
