@@ -101,7 +101,7 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 
 			// Assert modules present at all
 		$expected	= 'array';
-		$this->assertInternalType($expected, $activeModules);
+		$this->assertType($expected, $activeModules);
 
 			// Assert at least 5 modules (of sysmanager, which unittest is one of) present
 		$amountModules	= sizeof($activeModules);
@@ -119,7 +119,7 @@ class TodoyuAdminManagerTest extends PHPUnit_Framework_TestCase {
 			// Assert config of each module to contain: key, label and render callback
 		foreach($activeModules as $activeModule) {
 			$expected	= 'array';
-			$this->assertInternalType($expected, $activeModule);
+			$this->assertType($expected, $activeModule);
 
 			$this->assertArrayHasKey('key', $activeModule);
 			$this->assertArrayHasKey('label', $activeModule);
