@@ -87,7 +87,7 @@ class TodoyuAdminManager {
 	 * Get the render function of a module
 	 *
 	 * @param	String		$module		Module key
-	 * @return	Array		[class,method]
+	 * @return	String					'class::method'
 	 */
 	public static function getModuleRenderFunction($module) {
 		TodoyuExtensions::loadAllAdmin();

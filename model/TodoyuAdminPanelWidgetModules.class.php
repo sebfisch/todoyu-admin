@@ -37,7 +37,7 @@ class TodoyuAdminPanelWidgetModules extends TodoyuPanelWidget {
 		parent::__construct(
 			'admin',									// ext key
 			'adminmodules',								// panel widget ID
-			'admin.panelwidget-adminmodules.title',	// widget title text
+			'admin.panelwidget-adminmodules.title',		// widget title text
 			$config,									// widget config array
 			$params										// widget parameters
 		);
