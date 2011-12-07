@@ -75,7 +75,7 @@ class TodoyuAdminManager {
 		TodoyuExtensions::loadAllAdmin();
 
 		if( is_array( Todoyu::$CONFIG['EXT']['admin']['modules'] ) ) {
-			return TodoyuArray::sortByLabel( Todoyu::$CONFIG['EXT']['admin']['modules'] );
+			return TodoyuArray::sortByLabel(Todoyu::$CONFIG['EXT']['admin']['modules']);
 		} else {
 			return array();
 		}

@@ -37,7 +37,7 @@ TodoyuCli::setCliMode();
 TodoyuCli::init();
 
 
-require_once(PATH_CORE . '/inc/init.php');
+require_once( PATH_CORE . '/inc/init.php' );
 
 	// Load all extensions
 TodoyuExtensions::loadAllExtensions();
