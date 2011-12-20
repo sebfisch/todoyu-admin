@@ -42,7 +42,11 @@ require_once( PATH_CORE . '/inc/init.php' );
 	// Load all extensions
 TodoyuExtensions::loadAllExtensions();
 
-require_once('PHPUnit/Framework.php');
+//require_once('PHPUnit/Framework.php');
+
+if( !function_exists('phpunit_autoload') ) {
+	require_once('PHPUnit/Autoload.php');
+}
 
 
 /**
