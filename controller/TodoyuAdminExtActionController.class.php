@@ -62,7 +62,9 @@ class TodoyuAdminExtActionController extends TodoyuActionController {
 		}
 
 		TodoyuPage::addBodyClass('module' . ucfirst($module));
-//		TodoyuPage::set('bodyClasses', 'module' . ucfirst($module));
+
+			// Add colors stylesheet to page
+		TodoyuColors::generate();
 
 		$panelWidgets	= TodoyuAdminRenderer::renderPanelWidgets();
 		$fullContent	= TodoyuAdminRenderer::renderModule($module);
